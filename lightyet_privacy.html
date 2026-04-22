@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – LightYet</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #046b5e;
+      --primary-light: #ecfdf5;
+      --text: #1a2e24;
+      --muted: #4b7165;
+      --border: #d1fae5;
+      --bg: #f8fffe;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ────────────────────────────────────────── */
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 52px 24px 40px;
+      text-align: center;
+    }
+    header .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    header .app-icon {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .tagline {
+      margin-top: 8px;
+      font-size: 1rem;
+      opacity: 0.82;
+    }
+    header .updated {
+      margin-top: 20px;
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+
+    /* ── Layout ─────────────────────────────────────────── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Intro card ─────────────────────────────────────── */
+    .intro-card {
+      background: var(--primary-light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 40px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .intro-card strong { color: var(--primary); }
+
+    /* ── Section ────────────────────────────────────────── */
+    section {
+      margin-bottom: 44px;
+    }
+    section h2 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--primary);
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    section h2 .icon {
+      font-size: 1.1rem;
+    }
+
+    p { margin-bottom: 12px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      color: #2d4a42;
+    }
+    ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* ── Highlight boxes ─────────────────────────────────── */
+    .highlight {
+      background: var(--white);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: var(--muted);
+      box-shadow: 0 1px 4px rgba(4,107,94,0.07);
+    }
+    .highlight strong { color: var(--text); }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      vertical-align: middle;
+      margin-left: 6px;
+      letter-spacing: 0.4px;
+    }
+
+    /* ── Table ───────────────────────────────────────────── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 16px 0;
+    }
+    .data-table th {
+      background: var(--primary);
+      color: #fff;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 600;
+    }
+    .data-table th:first-child { border-radius: 8px 0 0 0; }
+    .data-table th:last-child  { border-radius: 0 8px 0 0; }
+    .data-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid var(--border);
+      color: #2d4a42;
+    }
+    .data-table tr:nth-child(even) td { background: var(--primary-light); }
+    .data-table tr:last-child td { border-bottom: none; }
+
+    .yes  { color: #059669; font-weight: 700; }
+    .no   { color: #9ca3af; }
+    .cond { color: #d97706; font-weight: 600; }
+
+    /* ── Contact card ────────────────────────────────────── */
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-card a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ── Footer ─────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      main { padding: 32px 16px 60px; }
+      .data-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════ HEADER ══════════════════════════ -->
+<header>
+  <div class="logo-wrap">
+    <div class="app-icon">⚖️</div>
+  </div>
+  <h1>LightYet – Privacy Policy</h1>
+  <p class="tagline">Your health data stays with you.</p>
+  <span class="updated">Last updated: April 22, 2026</span>
+</header>
+
+<!-- ══════════════════════════ MAIN ════════════════════════════ -->
+<main>
+
+  <!-- Intro -->
+  <div class="intro-card">
+    <strong>LightYet</strong> is a personal weight and body-composition tracker.
+    We built it with a simple guiding principle: <strong>your health data belongs to you</strong>,
+    and only you. This policy explains what information the app collects, where it lives,
+    and how we protect it. Please read it in full — it's short, plain-language, and matters.
+  </div>
+
+  <!-- 1. Who We Are -->
+  <section>
+    <h2><span class="icon">🏠</span>1. Who We Are</h2>
+    <p>
+      LightYet is developed and maintained as an independent iOS application.
+      For any privacy-related questions, please contact us at the email address
+      listed in the <a href="#contact" style="color:var(--primary);font-weight:600">Contact</a> section below.
+    </p>
+  </section>
+
+  <!-- 2. What Data We Collect -->
+  <section>
+    <h2><span class="icon">📋</span>2. What Data We Collect</h2>
+    <p>LightYet collects only the data you choose to enter. We never collect data passively.</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Stored Locally</th>
+          <th>iCloud Sync <span class="badge">PRO</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Body weight records</td>
+          <td>Core tracking & trends</td>
+          <td class="yes">✓ Yes</td>
+          <td class="cond">Pro only</td>
+        </tr>
+        <tr>
+          <td>Body fat percentage</td>
+          <td>Body composition analysis</td>
+          <td class="yes">✓ Yes</td>
+          <td class="cond">Pro only</td>
+        </tr>
+        <tr>
+          <td>Record date & optional note</td>
+          <td>Logging context</td>
+          <td class="yes">✓ Yes</td>
+          <td class="cond">Pro only</td>
+        </tr>
+        <tr>
+          <td>Name, gender, age, height</td>
+          <td>BMI & personalization</td>
+          <td class="yes">✓ Yes</td>
+          <td class="yes">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>Target weight</td>
+          <td>Goal progress</td>
+          <td class="yes">✓ Yes</td>
+          <td class="yes">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>App preferences (unit, theme)</td>
+          <td>Personalization</td>
+          <td class="yes">✓ Yes</td>
+          <td class="yes">✓ Yes</td>
+        </tr>
+        <tr>
+          <td>Notification time preference</td>
+          <td>Daily reminder scheduling</td>
+          <td class="yes">✓ Device only</td>
+          <td class="no">✗ Not synced</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight">
+      <strong>We do not collect:</strong> device identifiers, IP addresses, location data,
+      photos, contacts, health kit data, advertising IDs, or any analytics telemetry.
+    </div>
+  </section>
+
+  <!-- 3. How We Use Your Data -->
+  <section>
+    <h2><span class="icon">🔍</span>3. How We Use Your Data</h2>
+    <p>All data you enter is used exclusively to power app features you directly interact with:</p>
+    <ul>
+      <li>Displaying your weight history, trends, and progress charts</li>
+      <li>Calculating BMI and body fat classification</li>
+      <li>Tracking streak achievements and check-in milestones</li>
+      <li>Personalizing the app interface and widget displays</li>
+      <li>Sending local reminder notifications (if enabled by you)</li>
+    </ul>
+    <p>We do <strong>not</strong> use your data for advertising, profiling, or any purpose beyond the above.</p>
+  </section>
+
+  <!-- 4. Where Your Data Lives -->
+  <section>
+    <h2><span class="icon">🗄️</span>4. Where Your Data Lives</h2>
+
+    <p><strong>All users — Local device storage</strong></p>
+    <p>
+      Weight records and user profile information are stored on your device using Apple's
+      SwiftData framework. This data never leaves your device unless you are a Pro member
+      and have iCloud sync enabled.
+    </p>
+
+    <p><strong>Pro members — iCloud sync</strong></p>
+    <div class="highlight">
+      Pro members can optionally sync weight records and profile data across their Apple
+      devices via <strong>Apple CloudKit</strong> — Apple's private cloud infrastructure.
+      Synced data lives in your <em>personal, private iCloud container</em>. Neither we
+      nor any third party can access it. Apple's own privacy policy governs this storage:
+      <a href="https://www.apple.com/legal/privacy/" target="_blank"
+         style="color:var(--primary);font-weight:600">apple.com/legal/privacy</a>.
+    </div>
+
+    <p><strong>Preferences — iCloud Key-Value Store</strong></p>
+    <p>
+      App settings such as weight unit, theme color, and profile info are synced via
+      Apple's <em>NSUbiquitousKeyValueStore</em> for all users. This is a small, encrypted
+      key-value store in your iCloud account — again under Apple's privacy protections.
+      Notification preferences are deliberately excluded and remain device-local only.
+    </p>
+  </section>
+
+  <!-- 5. Third-Party Services -->
+  <section>
+    <h2><span class="icon">🔗</span>5. Third-Party Services & SDKs</h2>
+    <p>LightYet uses <strong>no third-party analytics, advertising, crash reporting, or tracking SDKs</strong>.</p>
+    <ul>
+      <li>No Firebase / Crashlytics</li>
+      <li>No Facebook / Meta SDK</li>
+      <li>No Google Analytics</li>
+      <li>No advertising networks of any kind</li>
+    </ul>
+    <p>
+      The only external system involved is <strong>Apple's own CloudKit and iCloud infrastructure</strong>,
+      which applies exclusively to Pro users who enable sync, and is governed by Apple's privacy policy.
+    </p>
+  </section>
+
+  <!-- 6. Data Sharing & Sale -->
+  <section>
+    <h2><span class="icon">🚫</span>6. Data Sharing & Sale</h2>
+    <p>
+      <strong>We do not sell, rent, trade, or share your personal data with any third party — ever.</strong>
+      We have no backend servers, no databases, and no access to data stored on your device or in your iCloud.
+    </p>
+    <p>
+      If you contact us via email for support, any information you voluntarily share will be used
+      solely to respond to your inquiry and will not be stored beyond the email thread.
+    </p>
+  </section>
+
+  <!-- 7. In-App Purchases -->
+  <section>
+    <h2><span class="icon">💳</span>7. In-App Purchases</h2>
+    <p>
+      LightYet Pro is available as an in-app purchase processed entirely by <strong>Apple's App Store</strong>.
+      We never receive, store, or process your payment card information.
+      Apple's payment privacy policy applies:
+      <a href="https://www.apple.com/legal/privacy/" target="_blank"
+         style="color:var(--primary);font-weight:600">apple.com/legal/privacy</a>.
+    </p>
+  </section>
+
+  <!-- 8. Notifications -->
+  <section>
+    <h2><span class="icon">🔔</span>8. Notifications</h2>
+    <p>
+      LightYet can send optional local reminder notifications to encourage daily weigh-ins.
+      These notifications are scheduled and delivered entirely on your device — no data leaves
+      your device for this feature. You can enable or disable notifications at any time in the
+      app's Settings or in iOS Settings → Notifications.
+    </p>
+  </section>
+
+  <!-- 9. Children's Privacy -->
+  <section>
+    <h2><span class="icon">👧</span>9. Children's Privacy</h2>
+    <p>
+      LightYet is not directed at children under 13 years of age. We do not knowingly collect
+      personal information from children under 13. If you believe your child has provided us
+      with personal data, please contact us immediately and we will take steps to delete such
+      information.
+    </p>
+  </section>
+
+  <!-- 10. Your Rights & Data Deletion -->
+  <section>
+    <h2><span class="icon">⚙️</span>10. Your Rights & Data Deletion</h2>
+    <p>Because all your data is stored on your own device and/or your own iCloud account, you have full control:</p>
+    <ul>
+      <li><strong>Access & export:</strong> All data is visible within the app at any time</li>
+      <li><strong>Delete records:</strong> You can delete any weight record directly in the app</li>
+      <li><strong>Delete all data:</strong> Uninstalling the app removes all local data from your device</li>
+      <li>
+        <strong>Delete iCloud data (Pro):</strong> Go to iOS Settings → [Your Name] → iCloud →
+        Manage Account Storage → LightYet → Delete Data
+      </li>
+      <li>
+        <strong>Withdraw preferences sync:</strong> Go to iOS Settings → [Your Name] → iCloud
+        and toggle off LightYet
+      </li>
+    </ul>
+  </section>
+
+  <!-- 11. Security -->
+  <section>
+    <h2><span class="icon">🔒</span>11. Security</h2>
+    <p>
+      Data stored locally on your device is protected by iOS's built-in data protection
+      and your device passcode / biometrics. Data synced via iCloud is encrypted both
+      in transit and at rest by Apple's infrastructure. We follow Apple's recommended
+      security practices for SwiftData and CloudKit.
+    </p>
+  </section>
+
+  <!-- 12. Changes -->
+  <section>
+    <h2><span class="icon">📝</span>12. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will revise the
+      "Last updated" date at the top of this page. For significant changes, we will notify
+      you via an in-app notice. Continued use of LightYet after any changes constitutes
+      your acceptance of the updated policy.
+    </p>
+  </section>
+
+  <!-- 13. Contact -->
+  <section id="contact">
+    <h2><span class="icon">✉️</span>13. Contact Us</h2>
+    <div class="contact-card">
+      <p style="font-size:1.05rem;font-weight:600;margin-bottom:8px">Have a privacy question?</p>
+      <p style="color:#4b7165;margin-bottom:18px">
+        We're committed to transparency. Reach out and we'll respond within 2 business days.
+      </p>
+      <!-- 请将下方邮箱替换为你的真实支持邮箱 -->
+      <a href="mailto:sunyihuan0@gmail.com">sunyihuan0@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+<footer>
+  <p>© 2026 LightYet. All rights reserved.</p>
+  <p style="margin-top:6px">
+    This privacy policy applies to LightYet for iOS.
+  </p>
+</footer>
+
+</body>
+</html>
