@@ -411,7 +411,7 @@
     <p class="tagline">Privacy Policy — Your health data stays with you.</p>
   </div>
   <div class="meta-row">
-    <span class="meta-pill">📅 Last updated: April 24, 2026</span>
+    <span class="meta-pill">📅 Last updated: May 18, 2026</span>
     <span class="meta-pill">📱 Applies to: LightYet for iOS</span>
     <span class="meta-pill">🌍 Effective immediately</span>
   </div>
@@ -424,16 +424,17 @@
     <li><a href="#s2">Data We Collect</a></li>
     <li><a href="#s3">How We Use It</a></li>
     <li><a href="#s4">Data Storage</a></li>
-    <li><a href="#s5">Subscriptions</a></li>
-    <li><a href="#s6">Third Parties</a></li>
-    <li><a href="#s7">Sharing & Sale</a></li>
-    <li><a href="#s8">Widget</a></li>
-    <li><a href="#s9">Notifications</a></li>
-    <li><a href="#s10">Children</a></li>
-    <li><a href="#s11">Your Rights</a></li>
-    <li><a href="#s12">Security</a></li>
-    <li><a href="#s13">Changes</a></li>
-    <li><a href="#s14">Contact</a></li>
+    <li><a href="#s5">Apple Health</a></li>
+    <li><a href="#s6">Subscriptions</a></li>
+    <li><a href="#s7">Third Parties</a></li>
+    <li><a href="#s8">Sharing & Sale</a></li>
+    <li><a href="#s9">Widget</a></li>
+    <li><a href="#s10">Notifications</a></li>
+    <li><a href="#s11">Children</a></li>
+    <li><a href="#s12">Your Rights</a></li>
+    <li><a href="#s13">Security</a></li>
+    <li><a href="#s14">Changes</a></li>
+    <li><a href="#s15">Contact</a></li>
   </ul>
 </nav>
 
@@ -453,6 +454,7 @@
       <span class="tldr-chip">✓ No ads or tracking</span>
       <span class="tldr-chip">✓ No third-party SDKs</span>
       <span class="tldr-chip">✓ Data stays on your device</span>
+      <span class="tldr-chip">✓ Apple Health only with permission</span>
       <span class="tldr-chip">✓ iCloud is your own account</span>
       <span class="tldr-chip">✓ Apple processes all payments</span>
     </div>
@@ -463,7 +465,7 @@
     <h2><span class="sec-num">1</span> Who We Are</h2>
     <p>
       LightYet is an independently developed iOS application. The developer can be reached at the
-      email address in the <a href="#s14" style="color:var(--primary);font-weight:600">Contact</a>
+      email address in the <a href="#s15" style="color:var(--primary);font-weight:600">Contact</a>
       section. There is no company, organization, or team behind this app beyond a single independent developer.
     </p>
     <div class="info-box">
@@ -476,8 +478,8 @@
   <section id="s2">
     <h2><span class="sec-num">2</span> Data We Collect</h2>
     <p>
-      LightYet collects <strong>only data you explicitly enter</strong>. No data is collected
-      passively, automatically, or in the background.
+      LightYet collects <strong>only data you explicitly enter or choose to import after granting permission</strong>.
+      No data is collected passively, automatically, or in the background.
     </p>
 
     <table class="data-table">
@@ -544,13 +546,21 @@
           <td class="yes">✓ App Group only</td>
           <td class="no">✗ Not synced</td>
         </tr>
+        <tr>
+          <td><strong>Apple Health data</strong> (weight, body fat, height)</td>
+          <td>Optional import, profile height update, and optional write-back</td>
+          <td class="cond">Only after you grant permission</td>
+          <td class="cond">Imported records may sync if Pro iCloud Sync is enabled</td>
+        </tr>
       </tbody>
     </table>
 
     <div class="highlight">
       <strong>We do not collect:</strong> device identifiers, IP addresses, precise or approximate
-      location, camera or photos, contacts, HealthKit data, advertising IDs, crash logs, usage
+      location, camera or photos, contacts, advertising IDs, crash logs, usage
       analytics, or any form of telemetry.
+      <strong>Apple Health data is accessed only if you explicitly grant Health permission and use
+      the Apple Health sync feature.</strong>
     </div>
   </section>
 
@@ -566,6 +576,7 @@
       <li>Populating the home screen and lock screen weight widget</li>
       <li>Sending local reminder notifications (only if you enable them)</li>
       <li>Generating shareable achievement cards (processed entirely on-device)</li>
+      <li>Importing or writing Apple Health weight and body fat data only after your permission</li>
     </ul>
     <p>We do <strong>not</strong> use your data for advertising, behavioral profiling, machine learning training, or any other purpose beyond delivering the features described above.</p>
   </section>
@@ -610,9 +621,46 @@
     </p>
   </section>
 
-  <!-- 5. Subscriptions & Purchases -->
+  <!-- 5. Apple Health -->
   <section id="s5">
-    <h2><span class="sec-num">5</span> Subscriptions &amp; In-App Purchases</h2>
+    <h2><span class="sec-num">5</span> Apple Health</h2>
+    <p>
+      LightYet can optionally connect with <strong>Apple Health</strong> through Apple's HealthKit
+      framework. This feature is entirely optional and is used only when you open Apple Health Sync
+      and grant Health permission in iOS.
+    </p>
+    <p><strong>Health data LightYet may read</strong></p>
+    <ul>
+      <li><strong>Body mass:</strong> used to import existing Apple Health weight records into LightYet</li>
+      <li><strong>Body fat percentage:</strong> used to import matching body fat records into LightYet</li>
+      <li><strong>Height:</strong> used only when you choose to update your LightYet profile height from Apple Health</li>
+    </ul>
+    <p><strong>Health data LightYet may write</strong></p>
+    <ul>
+      <li><strong>Body mass:</strong> new LightYet weight records can be saved to Apple Health only when you enable Apple Health writing</li>
+      <li><strong>Body fat percentage:</strong> body fat values can be saved to Apple Health together with your weight record when present</li>
+    </ul>
+    <div class="highlight">
+      <strong>HealthKit privacy:</strong> Apple Health access is permission-based and controlled by
+      iOS. LightYet does not use Apple Health data for advertising, tracking, marketing, behavioral
+      profiling, or machine learning training. Apple Health data is not shared with third parties.
+    </div>
+    <p>
+      If you import Apple Health records into LightYet, those imported records become LightYet records
+      and follow the same local storage and optional iCloud Sync behavior described in this policy.
+      If you enable Apple Health writing, only new LightYet weight and body fat records are written
+      back to Apple Health.
+    </p>
+    <p>
+      You can revoke Apple Health permissions at any time in <em>iOS Settings → Health → Data Access
+      &amp; Devices → LightYet</em>. You can also review or delete records written to Apple Health in
+      the Health app.
+    </p>
+  </section>
+
+  <!-- 6. Subscriptions & Purchases -->
+  <section id="s6">
+    <h2><span class="sec-num">6</span> Subscriptions &amp; In-App Purchases</h2>
     <p>
       LightYet offers a <strong>Pro</strong> upgrade via Apple's In-App Purchase system, available
       in three plans:
@@ -655,9 +703,9 @@
     </div>
   </section>
 
-  <!-- 6. Third-Party Services -->
-  <section id="s6">
-    <h2><span class="sec-num">6</span> Third-Party Services &amp; SDKs</h2>
+  <!-- 7. Third-Party Services -->
+  <section id="s7">
+    <h2><span class="sec-num">7</span> Third-Party Services &amp; SDKs</h2>
     <p>LightYet uses <strong>no third-party analytics, advertising, crash reporting, or tracking SDKs</strong>.</p>
     <table class="data-table">
       <thead>
@@ -671,14 +719,15 @@
         <tr><td>Any advertising network</td><td class="no">✗ No</td><td>—</td></tr>
         <tr><td>Apple CloudKit</td><td class="yes">✓ Pro users</td><td>Cross-device sync (your own iCloud)</td></tr>
         <tr><td>Apple StoreKit</td><td class="yes">✓ Yes</td><td>In-app purchase processing</td></tr>
+        <tr><td>Apple Health / HealthKit</td><td class="cond">Optional</td><td>Weight, body fat, and height import/write-back only with your permission</td></tr>
         <tr><td>Apple Push Notification Service (APNs)</td><td class="no">✗ No</td><td>Local notifications only — no APNs used</td></tr>
       </tbody>
     </table>
   </section>
 
-  <!-- 7. Data Sharing & Sale -->
-  <section id="s7">
-    <h2><span class="sec-num">7</span> Data Sharing &amp; Sale</h2>
+  <!-- 8. Data Sharing & Sale -->
+  <section id="s8">
+    <h2><span class="sec-num">8</span> Data Sharing &amp; Sale</h2>
     <p>
       <strong>We do not sell, rent, trade, license, or share your personal data with any third party — ever.</strong>
       We have no backend servers, no proprietary databases, and no ability to access data stored on your
@@ -695,9 +744,9 @@
     </div>
   </section>
 
-  <!-- 8. Widget -->
-  <section id="s8">
-    <h2><span class="sec-num">8</span> Home Screen Widget</h2>
+  <!-- 9. Widget -->
+  <section id="s9">
+    <h2><span class="sec-num">9</span> Home Screen Widget</h2>
     <p>
       LightYet includes an iOS home screen and lock screen widget that displays your latest weight
       and progress. The widget reads a small data snapshot written by the main app to a shared App
@@ -711,9 +760,9 @@
     </ul>
   </section>
 
-  <!-- 9. Notifications -->
-  <section id="s9">
-    <h2><span class="sec-num">9</span> Notifications</h2>
+  <!-- 10. Notifications -->
+  <section id="s10">
+    <h2><span class="sec-num">10</span> Notifications</h2>
     <p>
       LightYet can send <strong>local</strong> reminder notifications to encourage your daily
       weigh-in habit. These notifications are:
@@ -729,9 +778,9 @@
     </p>
   </section>
 
-  <!-- 10. Children's Privacy -->
-  <section id="s10">
-    <h2><span class="sec-num">10</span> Children's Privacy</h2>
+  <!-- 11. Children's Privacy -->
+  <section id="s11">
+    <h2><span class="sec-num">11</span> Children's Privacy</h2>
     <p>
       LightYet is not directed at or intended for children under 13 years of age (or the applicable
       minimum age in your jurisdiction). We do not knowingly collect personal information from
@@ -741,9 +790,9 @@
     </p>
   </section>
 
-  <!-- 11. Your Rights & Data Deletion -->
-  <section id="s11">
-    <h2><span class="sec-num">11</span> Your Rights &amp; Data Control</h2>
+  <!-- 12. Your Rights & Data Deletion -->
+  <section id="s12">
+    <h2><span class="sec-num">12</span> Your Rights &amp; Data Control</h2>
     <p>
       Because all data is stored on your own device and/or your own iCloud account, you have
       complete control at all times:
@@ -761,6 +810,10 @@
         <strong>Disable preferences sync (all users):</strong>
         <em>iOS Settings → [Your Name] → iCloud</em> → toggle off LightYet
       </li>
+      <li>
+        <strong>Manage Apple Health access:</strong>
+        <em>iOS Settings → Health → Data Access &amp; Devices → LightYet</em>
+      </li>
     </ul>
     <div class="info-box">
       Residents of the European Economic Area (EEA), United Kingdom, California (CCPA/CPRA), and
@@ -770,9 +823,9 @@
     </div>
   </section>
 
-  <!-- 12. Security -->
-  <section id="s12">
-    <h2><span class="sec-num">12</span> Security</h2>
+  <!-- 13. Security -->
+  <section id="s13">
+    <h2><span class="sec-num">13</span> Security</h2>
     <p>We implement the following protections for your data:</p>
     <ul>
       <li>Local data is protected by iOS Data Protection (encrypted when device is locked)</li>
@@ -780,6 +833,7 @@
       <li>App Group container data is sandboxed and inaccessible to other apps</li>
       <li>No credentials, tokens, or sensitive values are hard-coded in the app binary</li>
       <li>The app requests only the minimum iOS permissions necessary</li>
+      <li>Apple Health permissions are limited to weight, body fat percentage, and height</li>
     </ul>
     <div class="highlight">
       We follow Apple's recommended security practices for SwiftData, CloudKit, and
@@ -788,9 +842,9 @@
     </div>
   </section>
 
-  <!-- 13. Changes -->
-  <section id="s13">
-    <h2><span class="sec-num">13</span> Changes to This Policy</h2>
+  <!-- 14. Changes -->
+  <section id="s14">
+    <h2><span class="sec-num">14</span> Changes to This Policy</h2>
     <p>
       We may update this Privacy Policy from time to time to reflect changes in app functionality
       or applicable law. When we do, the "Last updated" date at the top of this page will be
@@ -804,9 +858,9 @@
     </p>
   </section>
 
-  <!-- 14. Contact -->
-  <section id="s14">
-    <h2><span class="sec-num">14</span> Contact Us</h2>
+  <!-- 15. Contact -->
+  <section id="s15">
+    <h2><span class="sec-num">15</span> Contact Us</h2>
     <div class="contact-card">
       <div class="icon-circle">✉️</div>
       <p style="font-size:1.08rem;font-weight:700;margin-bottom:10px;color:var(--text)">
