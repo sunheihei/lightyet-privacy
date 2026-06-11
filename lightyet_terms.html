@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Terms of Use for the LightYet iOS app.">
+  <title>Terms of Use - LightYet</title>
+  <style>
+    :root {
+      --bg: #f4fbf8;
+      --card: #ffffff;
+      --text: #17251f;
+      --muted: #587067;
+      --primary: #087b69;
+      --primary-dark: #045d50;
+      --soft: #e2f5ee;
+      --border: #cae6dc;
+      --warning: #fff6dd;
+      --warning-border: #ead69a;
+      --shadow: 0 18px 55px rgba(4, 93, 80, 0.09);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 85% 5%, rgba(8, 123, 105, 0.12), transparent 30rem),
+        var(--bg);
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    a { color: var(--primary-dark); font-weight: 650; }
+    header {
+      color: white;
+      background: linear-gradient(135deg, #034c43, #0a8a74);
+      padding: 24px 24px 54px;
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(880px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 30px;
+    }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 5px;
+      padding: 6px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 15px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .language-switcher button {
+      border: 0;
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: rgba(255,255,255,0.82);
+      background: transparent;
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .language-switcher button.active {
+      color: #034c43;
+      background: white;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      font-weight: 750;
+      opacity: 0.78;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 8vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: 18px 0 0;
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      padding: 6px 12px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.11);
+      font-size: 0.82rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      overflow-x: auto;
+      white-space: nowrap;
+      background: color-mix(in srgb, var(--card) 94%, transparent);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+    }
+
+    nav div {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 14px 12px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.86rem;
+    }
+
+    main { padding: 46px 0 76px; }
+
+    .summary,
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .summary {
+      padding: 26px;
+      margin-bottom: 24px;
+      background: linear-gradient(145deg, var(--card), var(--soft));
+    }
+
+    section {
+      padding: clamp(22px, 5vw, 34px);
+      margin-top: 20px;
+      scroll-margin-top: 72px;
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 24px 0 8px; font-size: 1.05rem; }
+    p { margin: 11px 0; color: var(--muted); }
+    strong { color: var(--text); }
+    ul { margin: 12px 0; padding-left: 1.25rem; }
+    li { margin: 8px 0; color: var(--muted); }
+
+    .notice {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border: 1px solid var(--warning-border);
+      border-radius: 15px;
+      background: var(--warning);
+      color: #58491c;
+    }
+
+    .notice p { color: inherit; margin: 6px 0 0; }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .data-card {
+      padding: 16px;
+      border-radius: 15px;
+      background: var(--soft);
+      border: 1px solid var(--border);
+    }
+
+    .data-card strong { display: block; margin-bottom: 4px; }
+    .data-card span { color: var(--muted); font-size: 0.92rem; }
+
+    footer {
+      padding: 0 0 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 650px) {
+      header { padding: 16px 14px 44px; }
+      .header-inner, main, footer { width: min(100% - 28px, 880px); }
+      .top-row { margin-bottom: 28px; }
+      .language-switcher { justify-content: center; }
+      .data-grid { grid-template-columns: 1fr; }
+      section, .summary { border-radius: 18px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09120f;
+        --card: #101c18;
+        --text: #e7f3ee;
+        --muted: #adc2ba;
+        --primary: #67d5bd;
+        --primary-dark: #86e6d0;
+        --soft: #142a23;
+        --border: #29483e;
+        --warning: #302a17;
+        --warning-border: #655626;
+        --shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="top-row">
+        <div class="language-switcher" id="languageSwitcher" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="zh">中文</button>
+        </div>
+      </div>
+      <p class="eyebrow">LightYet for iOS</p>
+      <h1 id="pageTitle"></h1>
+      <p class="subtitle" id="subtitle"></p>
+      <div class="meta" id="meta"></div>
+    </div>
+  </header>
+
+  <nav id="navigation" aria-label="Terms of Use sections"><div id="navLinks"></div></nav>
+  <main id="content"></main>
+  <footer id="footer"></footer>
+
+  <script>
+    const sharedLinks = {
+      privacy: "https://sunheihei.github.io/lightyet-privacy/lightyet_privacy.html",
+      appleEula: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      appleSubscriptions: "https://www.apple.com/legal/internet-services/itunes/us/terms.html"
+    };
+
+    const translations = {
+      en: {
+        title: "Terms of Use",
+        subtitle: "Rules and important notices for using LightYet, including AI meal estimates, wellness Q&A, body trend reviews, subscriptions, and fair-use limits.",
+        meta: ["Effective: June 11, 2026", "Independent developer", "AI results are estimates"],
+        nav: ["Overview", "AI & Health", "Accounts", "Purchases", "Fair Use", "Content", "Contact"],
+        summaryTitle: "Terms at a glance",
+        summary: "By using LightYet, you agree to these Terms of Use and to Apple's Standard License Agreement unless a custom license is provided in App Store Connect. LightYet helps you track weight, body fat, meals, photos, and trends; it is not a medical device or a substitute for professional advice.",
+        cards: [
+          ["AI is informational", "AI food, calorie, wellness, and body-review results are estimates and may be wrong."],
+          ["Not medical advice", "Do not use LightYet for diagnosis, treatment, medication, emergency care, or extreme dieting decisions."],
+          ["Personal fair use", "Unlimited member features are intended for normal personal use and may be limited to prevent abuse."],
+          ["Apple handles purchases", "In-app purchases, subscriptions, billing, cancellation, and refunds are handled through Apple."]
+        ],
+        sections: [
+          {
+            id: "acceptance", title: "1. Acceptance and license",
+            html: `<p>These Terms of Use apply to the LightYet iOS app and related online AI gateway services operated by the independent developer of LightYet.</p>
+              <p>Your use of the app is also governed by Apple's Standard License Agreement unless Apple App Store Connect lists a custom license agreement for LightYet. If these Terms conflict with Apple's required terms, Apple's required terms control for the app license.</p>
+              <p><a href="${sharedLinks.appleEula}" target="_blank" rel="noopener noreferrer">Apple Standard License Agreement</a></p>`
+          },
+          {
+            id: "service", title: "2. The LightYet service",
+            html: `<p>LightYet provides personal weight-management tools, including weight and body-fat tracking, progress photos, meal records, calorie estimates, summaries, widgets, Apple Health and iCloud features, and optional AI-powered features.</p>
+              <p>Features may change, be improved, be removed, or become temporarily unavailable. Online AI features depend on network connectivity, service providers, rate limits, and model availability.</p>`
+          },
+          {
+            id: "health", title: "3. Health and AI disclaimers",
+            html: `<div class="notice"><strong>LightYet is not medical advice.</strong><p>The app is for personal information, self-tracking, and general wellness support. It is not a medical device and does not provide diagnosis, treatment, emergency advice, or professional nutrition counseling.</p></div>
+              <ul>
+                <li>Food recognition and calorie values are estimates and can be inaccurate.</li>
+                <li>AI Wellness Q&amp;A and AI Body Review are generated from limited information and may be incomplete or wrong.</li>
+                <li>Weight, body-fat, calorie, and trend calculations are informational and may not reflect your full health status.</li>
+                <li>Consult a qualified healthcare professional before making medical, medication, treatment, pregnancy, eating-disorder, or major diet and exercise decisions.</li>
+                <li>For emergencies or urgent symptoms, contact local emergency services immediately.</li>
+              </ul>`
+          },
+          {
+            id: "accounts", title: "4. Your data, device, and responsibility",
+            html: `<p>You are responsible for the information you enter or upload, the goals you set, and how you interpret results. Keep your device, Apple ID, and iCloud account secure.</p>
+              <p>Some records are stored locally on your device. Optional iCloud, Apple Health, photo, microphone, speech recognition, camera, and notification features require the permissions you grant through iOS.</p>
+              <p>Our Privacy Policy explains how data is handled, including AI Data Sharing and external processing. <a href="${sharedLinks.privacy}" target="_blank" rel="noopener noreferrer">View the LightYet Privacy Policy</a>.</p>`
+          },
+          {
+            id: "purchases", title: "5. Purchases, subscriptions, and Premium",
+            html: `<p>Premium features may be offered as subscriptions, lifetime purchases, or other in-app purchases. Prices, trial availability, renewal terms, and product names are shown by Apple's purchase sheet before you confirm payment.</p>
+              <ul>
+                <li>Apple processes payments, renewals, cancellations, and refunds.</li>
+                <li>You can manage or cancel subscriptions through your Apple ID settings.</li>
+                <li>Premium access may require successful App Store transaction verification.</li>
+                <li>Unless required by law or Apple policy, refunds are handled by Apple.</li>
+              </ul>
+              <p>See Apple's media services terms for more purchase and subscription rules: <a href="${sharedLinks.appleSubscriptions}" target="_blank" rel="noopener noreferrer">Apple Media Services Terms and Conditions</a>.</p>`
+          },
+          {
+            id: "fair-use", title: "6. Fair use and anti-abuse limits",
+            html: `<p>When LightYet describes certain member AI features as unlimited, that means unlimited for normal personal use. To protect the service and prevent token theft, automated scraping, shared credentials, or abnormal traffic, LightYet may apply high daily fair-use limits, request size limits, device or IP-based rate limits, and other abuse-prevention controls.</p>
+              <p>You may not reverse engineer the online gateway, extract API keys, bypass rate limits, automate bulk requests, resell access, use the service for third-party workloads, or interfere with service operation.</p>`
+          },
+          {
+            id: "content", title: "7. User content and prohibited use",
+            html: `<p>You retain responsibility for photos, text, questions, and other content you provide. Do not upload or submit content that is illegal, harmful, abusive, invasive of another person's privacy, infringing, or unrelated to your personal use of the app.</p>
+              <p>Do not rely on AI output for high-stakes decisions. You are responsible for reviewing outputs before acting on them.</p>`
+          },
+          {
+            id: "availability", title: "8. Availability, changes, and termination",
+            html: `<p>LightYet may be updated to improve safety, comply with platform requirements, change AI providers, adjust limits, or modify features. Online features may be unavailable because of maintenance, outages, provider limits, abuse prevention, or network problems.</p>
+              <p>We may suspend or limit access to online features if we reasonably believe the service is being abused, attacked, or used in violation of these Terms.</p>`
+          },
+          {
+            id: "liability", title: "9. Disclaimers and limitation of liability",
+            html: `<p>LightYet is provided on an as-is and as-available basis to the maximum extent permitted by law. We do not guarantee that records, AI results, calorie estimates, trend analyses, sync, notifications, or online features will be accurate, uninterrupted, or error-free.</p>
+              <p>To the maximum extent permitted by law, the developer is not liable for indirect, incidental, special, consequential, or punitive damages, or for decisions you make based on app content or AI output.</p>`
+          },
+          {
+            id: "changes", title: "10. Changes to these Terms",
+            html: `<p>These Terms may be updated as LightYet changes. The effective date will be revised when material changes are made. Continuing to use LightYet after changes means you accept the updated Terms.</p>`
+          },
+          {
+            id: "contact", title: "11. Contact",
+            html: `<p>For questions about these Terms, contact the independent developer at <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
+          }
+        ],
+        footer: "© 2026 LightYet. These Terms apply to the current LightYet iOS app and related online AI gateway services."
+      },
+
+      zh: {
+        title: "使用条款",
+        subtitle: "本条款说明 LightYet 的使用规则和重要提示，包括 AI 餐食估算、健康问答、身体趋势复盘、会员购买和公平使用限制。",
+        meta: ["生效日期：2026 年 6 月 11 日", "独立开发者", "AI 结果为估算"],
+        nav: ["概览", "AI 与健康", "账户", "购买", "公平使用", "内容", "联系"],
+        summaryTitle: "条款概览",
+        summary: "使用 LightYet 即表示你同意本使用条款，并同意适用 Apple 标准许可协议，除非 App Store Connect 中为 LightYet 提供了自定义许可协议。LightYet 帮助你记录体重、体脂、饮食、照片和趋势，但它不是医疗器械，也不能替代专业建议。",
+        cards: [
+          ["AI 仅供参考", "AI 食物、热量、健康问答和身体复盘结果都是估算，可能不准确。"],
+          ["不是医疗建议", "不要将 LightYet 用于诊断、治疗、用药、急救或极端节食决策。"],
+          ["个人公平使用", "会员不限量功能面向正常个人使用，可能因防滥用而受到合理限制。"],
+          ["Apple 处理购买", "应用内购买、订阅、扣费、取消和退款由 Apple 处理。"]
+        ],
+        sections: [
+          {
+            id: "acceptance", title: "1. 接受条款与许可",
+            html: `<p>本使用条款适用于 LightYet iOS 应用，以及由 LightYet 独立开发者运营的相关在线 AI 网关服务。</p>
+              <p>除非 Apple App Store Connect 中为 LightYet 列出了自定义许可协议，否则你对 App 的使用也受 Apple 标准许可协议约束。如果本条款与 Apple 要求的条款冲突，在 App 许可范围内以 Apple 要求的条款为准。</p>
+              <p><a href="${sharedLinks.appleEula}" target="_blank" rel="noopener noreferrer">Apple 标准许可协议</a></p>`
+          },
+          {
+            id: "service", title: "2. LightYet 服务",
+            html: `<p>LightYet 提供个人体重管理工具，包括体重和体脂记录、进度照片、饮食记录、热量估算、摘要、小组件、Apple 健康、iCloud，以及可选的 AI 功能。</p>
+              <p>功能可能会调整、改进、移除或暂时不可用。在线 AI 功能依赖网络连接、服务提供商、限流策略和模型可用性。</p>`
+          },
+          {
+            id: "health", title: "3. 健康与 AI 免责声明",
+            html: `<div class="notice"><strong>LightYet 不提供医疗建议。</strong><p>本 App 用于个人信息记录、自我追踪和一般健康管理辅助。它不是医疗器械，不提供诊断、治疗、急救建议或专业营养咨询。</p></div>
+              <ul>
+                <li>食物识别和热量数值是估算，可能不准确。</li>
+                <li>AI 健康问答和 AI 身体复盘基于有限信息生成，可能不完整或错误。</li>
+                <li>体重、体脂、热量和趋势计算仅供参考，不能完整反映你的健康状况。</li>
+                <li>在做出医疗、用药、治疗、孕期、进食障碍、重大饮食或运动决定前，请咨询合格医疗专业人士。</li>
+                <li>如遇紧急情况或急症，请立即联系当地急救服务。</li>
+              </ul>`
+          },
+          {
+            id: "accounts", title: "4. 你的数据、设备与责任",
+            html: `<p>你需要对自己输入或上传的信息、设定的目标以及如何理解结果负责。请妥善保护你的设备、Apple ID 和 iCloud 账户。</p>
+              <p>部分记录保存在你的设备本地。可选的 iCloud、Apple 健康、照片、麦克风、语音识别、相机和通知功能需要你通过 iOS 授予相应权限。</p>
+              <p>我们的隐私政策说明了数据处理方式，包括 AI 数据共享和外部处理。<a href="${sharedLinks.privacy}" target="_blank" rel="noopener noreferrer">查看 LightYet 隐私政策</a>。</p>`
+          },
+          {
+            id: "purchases", title: "5. 购买、订阅与会员",
+            html: `<p>高级版功能可能以订阅、终身购买或其他应用内购买形式提供。价格、试用、续订条款和产品名称会在你确认付款前由 Apple 购买弹窗展示。</p>
+              <ul>
+                <li>付款、续订、取消和退款由 Apple 处理。</li>
+                <li>你可以通过 Apple ID 设置管理或取消订阅。</li>
+                <li>高级版权益可能需要成功验证 App Store 交易。</li>
+                <li>除非法律或 Apple 政策另有要求，退款由 Apple 处理。</li>
+              </ul>
+              <p>更多购买和订阅规则请参阅 Apple 媒体服务条款：<a href="${sharedLinks.appleSubscriptions}" target="_blank" rel="noopener noreferrer">Apple Media Services Terms and Conditions</a>。</p>`
+          },
+          {
+            id: "fair-use", title: "6. 公平使用与防滥用限制",
+            html: `<p>当 LightYet 将某些会员 AI 功能描述为不限量时，含义是面向正常个人使用的不限量。为了保护服务、防止 token 被盗刷、自动化抓取、共享凭证或异常流量，LightYet 可以设置较高的每日公平使用限制、请求大小限制、基于设备或 IP 的限流，以及其他防滥用措施。</p>
+              <p>你不得逆向在线网关、提取 API Key、绕过限流、自动化批量请求、转售访问权限、将服务用于第三方工作负载，或干扰服务运行。</p>`
+          },
+          {
+            id: "content", title: "7. 用户内容与禁止行为",
+            html: `<p>你需要对自己提供的照片、文本、问题和其他内容负责。不得上传或提交违法、有害、辱骂、侵犯他人隐私、侵权，或与个人使用本 App 无关的内容。</p>
+              <p>不要将 AI 输出用于高风险决策。在采取行动前，你需要自行审查和判断输出内容。</p>`
+          },
+          {
+            id: "availability", title: "8. 可用性、变更与终止",
+            html: `<p>LightYet 可能为了提升安全性、满足平台要求、更换 AI 服务商、调整限制或修改功能而更新。在线功能可能因维护、故障、服务商限制、防滥用或网络问题而不可用。</p>
+              <p>如果我们有合理理由认为服务被滥用、攻击或违反本条款使用，我们可以暂停或限制在线功能访问。</p>`
+          },
+          {
+            id: "liability", title: "9. 免责声明与责任限制",
+            html: `<p>在法律允许的最大范围内，LightYet 按现状和可用状态提供。我们不保证记录、AI 结果、热量估算、趋势分析、同步、通知或在线功能一定准确、连续或无错误。</p>
+              <p>在法律允许的最大范围内，开发者不对间接、偶然、特殊、后果性或惩罚性损害负责，也不对你基于 App 内容或 AI 输出做出的决定负责。</p>`
+          },
+          {
+            id: "changes", title: "10. 条款变更",
+            html: `<p>本条款可能随着 LightYet 的变化而更新。发生重大变更时会更新生效日期。变更后继续使用 LightYet，即表示你接受更新后的条款。</p>`
+          },
+          {
+            id: "contact", title: "11. 联系方式",
+            html: `<p>如对本条款有任何问题，请联系独立开发者：<a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>。</p>`
+          }
+        ],
+        footer: "© 2026 LightYet。本条款适用于当前版本的 LightYet iOS 应用及相关在线 AI 网关服务。"
+      }
+    };
+
+    function render(language) {
+      const copy = translations[language] || translations.en;
+      document.documentElement.lang = language;
+      document.title = `${copy.title} - LightYet`;
+      document.getElementById("pageTitle").textContent = copy.title;
+      document.getElementById("subtitle").textContent = copy.subtitle;
+      document.getElementById("meta").innerHTML = copy.meta
+        .map(item => `<span class="pill">${item}</span>`).join("");
+
+      const navTargets = ["overview", "health", "accounts", "purchases", "fair-use", "content", "contact"];
+      document.getElementById("navLinks").innerHTML = copy.nav
+        .map((label, index) => `<a href="#${navTargets[index]}">${label}</a>`).join("");
+      document.getElementById("navigation").setAttribute("aria-label", copy.title);
+
+      const cards = copy.cards.map(card => `
+        <div class="data-card">
+          <strong>${card[0]}</strong>
+          <span>${card[1]}</span>
+        </div>
+      `).join("");
+
+      const sections = copy.sections.map(section => `
+        <section id="${section.id}">
+          <h2>${section.title}</h2>
+          ${section.html}
+        </section>
+      `).join("");
+
+      document.getElementById("content").innerHTML = `
+        <div class="summary" id="overview">
+          <h2>${copy.summaryTitle}</h2>
+          <p>${copy.summary}</p>
+          <div class="data-grid">${cards}</div>
+        </div>
+        ${sections}
+      `;
+      document.getElementById("footer").innerHTML = `<p>${copy.footer}</p>`;
+
+      document.querySelectorAll("[data-lang]").forEach(button => {
+        button.classList.toggle("active", button.dataset.lang === language);
+      });
+      localStorage.setItem("lightyet_terms_language", language);
+    }
+
+    function initialLanguage() {
+      const saved = localStorage.getItem("lightyet_terms_language");
+      if (saved && translations[saved]) return saved;
+      const preferred = (navigator.language || "en").toLowerCase();
+      return Object.keys(translations).find(language => preferred.startsWith(language)) || "en";
+    }
+
+    document.getElementById("languageSwitcher").addEventListener("click", event => {
+      const button = event.target.closest("button[data-lang]");
+      if (button) render(button.dataset.lang);
+    });
+
+    render(initialLanguage());
+  </script>
+</body>
+</html>
