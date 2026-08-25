@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Privacy Policy for the LightYet iOS app.">
-  <title>Privacy Policy - LightYet</title>
+  <meta name="description" content="Terms of Use for the LightYet iOS app.">
+  <title>Terms of Use - LightYet</title>
   <style>
     :root {
       --bg: #f4fbf8;
@@ -23,7 +23,6 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; background: var(--bg); }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -36,7 +35,6 @@
     }
 
     a { color: var(--primary-dark); font-weight: 650; }
-
     header {
       color: white;
       background: linear-gradient(135deg, #034c43, #0a8a74);
@@ -250,11 +248,6 @@
         <div class="language-switcher" id="languageSwitcher" aria-label="Language">
           <button type="button" data-lang="en">EN</button>
           <button type="button" data-lang="zh">中文</button>
-          <button type="button" data-lang="ko">한국어</button>
-          <button type="button" data-lang="ja">日本語</button>
-          <button type="button" data-lang="de">DE</button>
-          <button type="button" data-lang="es">ES</button>
-          <button type="button" data-lang="fr">FR</button>
         </div>
       </div>
       <p class="eyebrow">LightYet for iOS</p>
@@ -264,748 +257,188 @@
     </div>
   </header>
 
-  <nav id="navigation" aria-label="Privacy Policy sections"><div id="navLinks"></div></nav>
+  <nav id="navigation" aria-label="Terms of Use sections"><div id="navLinks"></div></nav>
   <main id="content"></main>
   <footer id="footer"></footer>
 
   <script>
     const sharedLinks = {
-      cloudflare: "https://www.cloudflare.com/privacypolicy/",
-      xiaomi: "https://privacy.mi.com/all/en_US/",
-      apple: "https://www.apple.com/legal/privacy/"
+      privacy: "https://sunheihei.github.io/lightyet-privacy/lightyet_privacy.html",
+      appleEula: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+      appleSubscriptions: "https://www.apple.com/legal/internet-services/itunes/us/terms.html"
     };
 
     const translations = {
       en: {
-        title: "Privacy Policy",
-        subtitle: "How LightYet handles weight-management data, photos, Apple Health data, optional iCloud sync, and information submitted to AI features.",
-        meta: ["Effective: August 25, 2026", "Local-first", "AI sharing requires consent"],
-        nav: ["Overview", "Information", "AI Processing", "Apple Services", "Storage", "Your Choices", "Contact"],
-        summaryTitle: "Privacy at a glance",
-        summary: "LightYet is a local-first weight-management app. Core records are stored on your device. Optional features may use Apple iCloud, Apple Health, local notifications, speech recognition, the camera, the photo library, StoreKit, and external AI processing.",
+        title: "Terms of Use",
+        subtitle: "Rules and important notices for using LightYet, including AI meal estimates, wellness Q&A, body trend reviews, subscriptions, and fair-use limits.",
+        meta: ["Effective: June 11, 2026", "Independent developer", "AI results are estimates"],
+        nav: ["Overview", "AI & Health", "Accounts", "Purchases", "Fair Use", "Content", "Contact"],
+        summaryTitle: "Terms at a glance",
+        summary: "By using LightYet, you agree to these Terms of Use and to Apple's Standard License Agreement unless a custom license is provided in App Store Connect. LightYet helps you track weight, body fat, meals, photos, and trends; it is not a medical device or a substitute for professional advice.",
         cards: [
-          ["No advertising or behavioral tracking", "The current app does not include third-party advertising or behavioral analytics SDKs."],
-          ["AI is optional", "No AI request is sent until you grant AI Data Sharing consent."],
-          ["Health access requires permission", "Apple Health data is read or written only after you grant the relevant iOS permission. Steps, sleep, active energy, and workout summaries remain on this device by default."],
-          ["iCloud sync is optional", "Supported records sync through your Apple iCloud account only when enabled; sync is off by default."]
+          ["AI is informational", "AI food, calorie, wellness, and body-review results are estimates and may be wrong."],
+          ["Not medical advice", "Do not use LightYet for diagnosis, treatment, medication, emergency care, or extreme dieting decisions."],
+          ["Personal fair use", "Unlimited member features are intended for normal personal use and may be limited to prevent abuse."],
+          ["Apple handles purchases", "In-app purchases, subscriptions, billing, cancellation, and refunds are handled through Apple."]
         ],
         sections: [
           {
-            id: "information", title: "1. Information LightYet handles",
-            html: `<p>The information handled depends on the features you choose. It may include:</p>
-              <ul>
-                <li>Weight, body-fat percentage, timestamps, notes, goals, and trend summaries.</li>
-                <li>Nickname, age, sex selection, height, target weight, avatar, unit, and theme.</li>
-                <li>Progress photos, thumbnails, pose labels, food records, meal photos, and calorie estimates.</li>
-                <li>AI questions, answers, conversation history, important marks, and AI reports.</li>
-                <li>Reminder preferences, purchase entitlement state, and Apple Health weight, body-fat, height, steps, sleep, active-energy, or workout-summary data when authorized.</li>
-              </ul>
-              <h3>Device and network information</h3>
-              <p>Apple and AI services necessarily receive ordinary network information such as IP address, request time, and technical headers. LightYet does not use it for advertising profiles or cross-app tracking.</p>
-              <p>The current app does not request contacts, precise location, payment-card details, or an advertising identifier. Apple handles payment details.</p>`
+            id: "acceptance", title: "1. Acceptance and license",
+            html: `<p>These Terms of Use apply to the LightYet iOS app and related online AI gateway services operated by the independent developer of LightYet.</p>
+              <p>Your use of the app is also governed by Apple's Standard License Agreement unless Apple App Store Connect lists a custom license agreement for LightYet. If these Terms conflict with Apple's required terms, Apple's required terms control for the app license.</p>
+              <p><a href="${sharedLinks.appleEula}" target="_blank" rel="noopener noreferrer">Apple Standard License Agreement</a></p>`
           },
           {
-            id: "use", title: "2. How information is used",
-            html: `<ul>
-                <li>To create, display, search, export, import, and delete records.</li>
-                <li>To calculate trends, achievements, calorie totals, summaries, and widgets.</li>
-                <li>To store selected photos, schedule reminders, and provide Apple Health or iCloud features you enable.</li>
-                <li>To verify Premium access through StoreKit.</li>
-                <li>To provide an AI result you explicitly request after granting consent.</li>
-              </ul>
-              <p>LightYet does not use your information for behavioral advertising, data brokerage, or cross-app tracking.</p>`
+            id: "service", title: "2. The LightYet service",
+            html: `<p>LightYet provides personal weight-management tools, including weight and body-fat tracking, progress photos, meal records, calorie estimates, summaries, widgets, Apple Health and iCloud features, and optional AI-powered features.</p>
+              <p>Features may change, be improved, be removed, or become temporarily unavailable. Online AI features depend on network connectivity, service providers, rate limits, and model availability.</p>`
           },
           {
-            id: "ai", title: "3. AI Data Sharing and external processing",
-            html: `<div class="notice"><strong>AI features are opt-in.</strong><p>Before any AI request is sent, LightYet displays an AI Data Sharing screen. You can decline and continue using non-AI features, or withdraw consent later in Settings.</p></div>
-              <p>AI requests pass through the LightYet gateway on <strong>Cloudflare Workers</strong> and are forwarded to <strong>Xiaomi MiMo</strong>.</p>
-              <h3>Data that may be sent</h3>
+            id: "health", title: "3. Health and AI disclaimers",
+            html: `<div class="notice"><strong>LightYet is not medical advice.</strong><p>The app is for personal information, self-tracking, and general wellness support. It is not a medical device and does not provide diagnosis, treatment, emergency advice, or professional nutrition counseling.</p></div>
               <ul>
-                <li><strong>Meal photo estimate:</strong> the compressed meal image you select, optional hint, locale, and calorie target.</li>
-                <li><strong>Typed or spoken meal estimate:</strong> the meal description, locale, and calorie target.</li>
-                <li><strong>AI Wellness Q&amp;A:</strong> your question, recent conversation context, and relevant age, sex selection, height, weight, body-fat, trend, and calorie context.</li>
-                <li><strong>AI body review:</strong> relevant profile values, planning preferences, weight and body-fat trends, calorie summaries, and—when you request this report—steps, sleep-duration summaries, active-energy totals, and workout summaries from Apple Health.</li>
-              </ul>
-              <p>Progress photos are not included in body-review requests. Apple Health activity data is read temporarily for the requested review: LightYet does not save these raw values as app records or sync them through iCloud. A food photo is sent only when you actively choose it for AI meal estimation. AI results may be inaccurate and are not medical diagnosis, treatment, or emergency advice.</p>
-              <h3>Withdrawal and providers</h3>
-              <p>Turning off AI Data Sharing stops new AI transmissions. It does not automatically delete locally stored conversations or reports. Previously processed data may be retained by providers under their policies.</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Cloudflare Privacy Policy</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Xiaomi Privacy Policy</a></li>
+                <li>Food recognition and calorie values are estimates and can be inaccurate.</li>
+                <li>AI Wellness Q&amp;A and AI Body Review are generated from limited information and may be incomplete or wrong.</li>
+                <li>Weight, body-fat, calorie, and trend calculations are informational and may not reflect your full health status.</li>
+                <li>Consult a qualified healthcare professional before making medical, medication, treatment, pregnancy, eating-disorder, or major diet and exercise decisions.</li>
+                <li>For emergencies or urgent symptoms, contact local emergency services immediately.</li>
               </ul>`
           },
           {
-            id: "apple", title: "4. Apple services",
-            html: `<h3>Apple Health</h3>
-              <p>With your permission, LightYet may read weight and body-fat records, read height when you request a profile update, and write new weight or body-fat records when writing is enabled. For the activity and sleep features, this may include daily step totals, sleep-duration summaries, active-energy totals, and workout summaries. These four activity categories are optional, read only after the relevant iOS Health permission, and are not written back to Apple Health. HealthKit data is not used for advertising or tracking. Activity data remains on this device by default, is not saved as a LightYet record, and is not synced through iCloud. It may leave the device only when you grant AI Data Sharing and actively request an AI body review. Each device requires its own Apple Health authorization.</p>
-              <h3>iCloud and other Apple services</h3>
-              <p>When iCloud sync is enabled, supported records and progress-photo display images or thumbnails may sync through your private Apple account. Profile preferences may use NSUbiquitousKeyValueStore. Reminder schedules and AI consent state remain local.</p>
-              <p>Microphone, speech, camera, photo-library, and notification permissions are requested only for features you use. Purchases are handled by StoreKit. See the <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>`
+            id: "accounts", title: "4. Your data, device, and responsibility",
+            html: `<p>You are responsible for the information you enter or upload, the goals you set, and how you interpret results. Keep your device, Apple ID, and iCloud account secure.</p>
+              <p>Some records are stored locally on your device. Optional iCloud, Apple Health, photo, microphone, speech recognition, camera, and notification features require the permissions you grant through iOS.</p>
+              <p>Our Privacy Policy explains how data is handled, including AI Data Sharing and external processing. <a href="${sharedLinks.privacy}" target="_blank" rel="noopener noreferrer">View the LightYet Privacy Policy</a>.</p>`
           },
           {
-            id: "storage", title: "5. Storage, retention, and security",
-            html: `<p>Records are stored locally using SwiftData, UserDefaults, Application Support files, and the app-group container. Progress-photo originals and food photos are stored in Application Support; compressed copies, thumbnails, or cutouts may also be created. Apple Health steps, sleep, active energy, and workout summaries used by the activity and sleep screens are held temporarily for display and are not stored as LightYet records.</p>
-              <p>Local records remain until deleted, cleared, or the app is uninstalled. iCloud copies remain until removed through LightYet or Apple controls. Service providers may retain limited request or operational data under their own policies.</p>
-              <p>LightYet relies on iOS sandboxing, Apple Data Protection, HTTPS, CloudKit security, and provider access controls. No storage or transmission method is guaranteed to be completely secure. If you enable iCloud, a generated AI report may be included in the existing AI snapshot sync; the raw Apple Health activity data used to create it is not synced.</p>`
-          },
-          {
-            id: "sharing", title: "6. Sharing, sale, analytics, and advertising",
-            html: `<p>LightYet does not sell or rent personal information and currently includes no third-party advertising or behavioral analytics SDKs.</p>
-              <p>Information is shared only with Apple for enabled Apple services, with Cloudflare and Xiaomi MiMo after AI consent and an AI request, with recipients you choose when exporting, or when required by valid law.</p>`
-          },
-          {
-            id: "choices", title: "7. Your choices and controls",
-            html: `<ul>
-                <li>Use core tracking features without AI consent.</li>
-                <li>Turn AI Data Sharing on or off in Settings.</li>
-                <li>Manage camera, photos, microphone, speech, notifications, Health, and iCloud permissions in iOS. Apple Health permissions must be granted separately on each device.</li>
-                <li>Edit or delete weight, food, photo, and AI conversation records.</li>
-                <li>Export supported data, clear app data, and manage iCloud copies through Apple controls.</li>
+            id: "purchases", title: "5. Purchases, subscriptions, and Premium",
+            html: `<p>Premium features may be offered as subscriptions, lifetime purchases, or other in-app purchases. Prices, trial availability, renewal terms, and product names are shown by Apple's purchase sheet before you confirm payment.</p>
+              <ul>
+                <li>Apple processes payments, renewals, cancellations, and refunds.</li>
+                <li>You can manage or cancel subscriptions through your Apple ID settings.</li>
+                <li>Premium access may require successful App Store transaction verification.</li>
+                <li>Unless required by law or Apple policy, refunds are handled by Apple.</li>
               </ul>
-              <p>Depending on your location, privacy laws may provide rights to access, correct, delete, or restrict processing. Contact the developer for questions about externally processed AI requests.</p>`
+              <p>See Apple's media services terms for more purchase and subscription rules: <a href="${sharedLinks.appleSubscriptions}" target="_blank" rel="noopener noreferrer">Apple Media Services Terms and Conditions</a>.</p>`
           },
           {
-            id: "children", title: "8. Children's privacy",
-            html: `<p>LightYet is not directed to children under 13 or the minimum age required in the user's jurisdiction. We do not knowingly collect information from children below the applicable minimum age.</p>`
+            id: "fair-use", title: "6. Fair use and anti-abuse limits",
+            html: `<p>When LightYet describes certain member AI features as unlimited, that means unlimited for normal personal use. To protect the service and prevent token theft, automated scraping, shared credentials, or abnormal traffic, LightYet may apply high daily fair-use limits, request size limits, device or IP-based rate limits, and other abuse-prevention controls.</p>
+              <p>You may not reverse engineer the online gateway, extract API keys, bypass rate limits, automate bulk requests, resell access, use the service for third-party workloads, or interfere with service operation.</p>`
           },
           {
-            id: "changes", title: "9. Changes to this policy",
-            html: `<p>This policy may be updated as LightYet changes. The effective date will be revised when the policy changes. Material changes to AI processing, providers, or user choices should also be reflected in app disclosures.</p>`
+            id: "content", title: "7. User content and prohibited use",
+            html: `<p>You retain responsibility for photos, text, questions, and other content you provide. Do not upload or submit content that is illegal, harmful, abusive, invasive of another person's privacy, infringing, or unrelated to your personal use of the app.</p>
+              <p>Do not rely on AI output for high-stakes decisions. You are responsible for reviewing outputs before acting on them.</p>`
           },
           {
-            id: "contact", title: "10. Contact",
-            html: `<p>For privacy questions, requests, or concerns, contact the independent developer at <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
+            id: "availability", title: "8. Availability, changes, and termination",
+            html: `<p>LightYet may be updated to improve safety, comply with platform requirements, change AI providers, adjust limits, or modify features. Online features may be unavailable because of maintenance, outages, provider limits, abuse prevention, or network problems.</p>
+              <p>We may suspend or limit access to online features if we reasonably believe the service is being abused, attacked, or used in violation of these Terms.</p>`
+          },
+          {
+            id: "liability", title: "9. Disclaimers and limitation of liability",
+            html: `<p>LightYet is provided on an as-is and as-available basis to the maximum extent permitted by law. We do not guarantee that records, AI results, calorie estimates, trend analyses, sync, notifications, or online features will be accurate, uninterrupted, or error-free.</p>
+              <p>To the maximum extent permitted by law, the developer is not liable for indirect, incidental, special, consequential, or punitive damages, or for decisions you make based on app content or AI output.</p>`
+          },
+          {
+            id: "changes", title: "10. Changes to these Terms",
+            html: `<p>These Terms may be updated as LightYet changes. The effective date will be revised when material changes are made. Continuing to use LightYet after changes means you accept the updated Terms.</p>`
+          },
+          {
+            id: "contact", title: "11. Contact",
+            html: `<p>For questions about these Terms, contact the independent developer at <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
           }
         ],
-        footer: "© 2026 LightYet. This policy applies to the current LightYet iOS app."
+        footer: "© 2026 LightYet. These Terms apply to the current LightYet iOS app and related online AI gateway services."
       },
 
       zh: {
-        title: "隐私政策",
-        subtitle: "本政策说明 LightYet 如何处理体重管理数据、照片、Apple 健康数据、可选 iCloud 同步，以及提交给 AI 功能的信息。",
-        meta: ["生效日期：2026 年 8 月 25 日", "本地优先", "AI 共享需要同意"],
-        nav: ["概览", "信息", "AI 处理", "Apple 服务", "存储", "你的选择", "联系"],
-        summaryTitle: "隐私概览",
-        summary: "LightYet 是一款本地优先的体重管理应用。核心记录保存在你的设备上。你选择使用时，部分功能可能使用 Apple iCloud、Apple 健康、本地通知、语音识别、相机、照片图库、StoreKit 和外部 AI 处理。",
+        title: "使用条款",
+        subtitle: "本条款说明 LightYet 的使用规则和重要提示，包括 AI 餐食估算、健康问答、身体趋势复盘、会员购买和公平使用限制。",
+        meta: ["生效日期：2026 年 6 月 11 日", "独立开发者", "AI 结果为估算"],
+        nav: ["概览", "AI 与健康", "账户", "购买", "公平使用", "内容", "联系"],
+        summaryTitle: "条款概览",
+        summary: "使用 LightYet 即表示你同意本使用条款，并同意适用 Apple 标准许可协议，除非 App Store Connect 中为 LightYet 提供了自定义许可协议。LightYet 帮助你记录体重、体脂、饮食、照片和趋势，但它不是医疗器械，也不能替代专业建议。",
         cards: [
-          ["无广告或行为追踪", "当前版本不包含第三方广告或行为分析 SDK。"],
-          ["AI 是可选功能", "在你同意 AI 数据共享之前，不会发送任何 AI 请求。"],
-          ["健康数据需要授权", "只有在你授予相应 iOS 权限后，应用才会读取或写入 Apple 健康数据。步数、睡眠、活动能量和训练摘要默认仅保留在本设备。"],
-          ["iCloud 同步可选", "只有开启后，支持的记录才会通过你的 Apple iCloud 账户同步；默认关闭。"]
+          ["AI 仅供参考", "AI 食物、热量、健康问答和身体复盘结果都是估算，可能不准确。"],
+          ["不是医疗建议", "不要将 LightYet 用于诊断、治疗、用药、急救或极端节食决策。"],
+          ["个人公平使用", "会员不限量功能面向正常个人使用，可能因防滥用而受到合理限制。"],
+          ["Apple 处理购买", "应用内购买、订阅、扣费、取消和退款由 Apple 处理。"]
         ],
         sections: [
           {
-            id: "information", title: "1. LightYet 处理的信息",
-            html: `<p>应用处理的信息取决于你选择使用的功能，可能包括：</p>
-              <ul>
-                <li>体重、体脂率、时间、备注、目标和趋势摘要。</li>
-                <li>昵称、年龄、性别选择、身高、目标体重、头像、单位和主题。</li>
-                <li>进度照片、缩略图、姿势标签、饮食记录、餐食照片和热量估算。</li>
-                <li>AI 问题、回答、对话历史、重点标记和 AI 报告。</li>
-                <li>提醒偏好、购买权益状态，以及你授权后的 Apple 健康体重、体脂、身高、步数、睡眠、活动能量或训练摘要数据。</li>
-              </ul>
-              <h3>设备和网络信息</h3>
-              <p>Apple 和 AI 服务在网络通信时会自然接收到 IP 地址、请求时间和技术请求头等常规信息。LightYet 不会用这些信息建立广告画像或进行跨应用追踪。</p>
-              <p>当前版本不会请求通讯录、精确位置、银行卡资料或广告标识符。支付资料由 Apple 处理。</p>`
+            id: "acceptance", title: "1. 接受条款与许可",
+            html: `<p>本使用条款适用于 LightYet iOS 应用，以及由 LightYet 独立开发者运营的相关在线 AI 网关服务。</p>
+              <p>除非 Apple App Store Connect 中为 LightYet 列出了自定义许可协议，否则你对 App 的使用也受 Apple 标准许可协议约束。如果本条款与 Apple 要求的条款冲突，在 App 许可范围内以 Apple 要求的条款为准。</p>
+              <p><a href="${sharedLinks.appleEula}" target="_blank" rel="noopener noreferrer">Apple 标准许可协议</a></p>`
           },
           {
-            id: "use", title: "2. 信息的使用方式",
-            html: `<ul>
-                <li>创建、展示、搜索、导入、导出和删除记录。</li>
-                <li>计算趋势、成就、热量总计、摘要和小组件数据。</li>
-                <li>保存你选择的照片，并提供你开启的提醒、Apple 健康和 iCloud 功能。</li>
-                <li>通过 StoreKit 验证高级版权益。</li>
-                <li>在你授权后，提供你主动请求的 AI 结果。</li>
-              </ul>
-              <p>LightYet 不会将信息用于行为广告、数据交易或跨应用追踪。</p>`
+            id: "service", title: "2. LightYet 服务",
+            html: `<p>LightYet 提供个人体重管理工具，包括体重和体脂记录、进度照片、饮食记录、热量估算、摘要、小组件、Apple 健康、iCloud，以及可选的 AI 功能。</p>
+              <p>功能可能会调整、改进、移除或暂时不可用。在线 AI 功能依赖网络连接、服务提供商、限流策略和模型可用性。</p>`
           },
           {
-            id: "ai", title: "3. AI 数据共享与外部处理",
-            html: `<div class="notice"><strong>AI 功能需要主动同意。</strong><p>发送任何 AI 请求前，LightYet 会显示 AI 数据共享说明。你可以拒绝并继续使用非 AI 功能，也可以随时在设置中撤回同意。</p></div>
-              <p>AI 请求会经过托管在 <strong>Cloudflare Workers</strong> 上的 LightYet 网关，并转发给 <strong>Xiaomi MiMo</strong>。</p>
-              <h3>可能发送的数据</h3>
+            id: "health", title: "3. 健康与 AI 免责声明",
+            html: `<div class="notice"><strong>LightYet 不提供医疗建议。</strong><p>本 App 用于个人信息记录、自我追踪和一般健康管理辅助。它不是医疗器械，不提供诊断、治疗、急救建议或专业营养咨询。</p></div>
               <ul>
-                <li><strong>餐食照片估算：</strong>你选择的压缩餐食图片、可选提示、语言地区和热量目标。</li>
-                <li><strong>文字或语音餐食估算：</strong>餐食描述、语言地区和热量目标。</li>
-                <li><strong>AI 健康问答：</strong>你的问题、近期对话上下文，以及相关年龄、性别选择、身高、体重、体脂、趋势和热量信息。</li>
-                <li><strong>AI 身体复盘：</strong>相关个人资料、计划偏好、体重和体脂趋势、热量摘要，以及你主动请求报告时提供的 Apple 健康步数、睡眠时长汇总、活动能量总量和训练摘要。</li>
-              </ul>
-              <p>身体复盘不会发送进度照片。用于身体复盘的 Apple 健康活动数据只会为本次报告临时读取；LightYet 不会将这些原始数值保存为应用记录，也不会通过 iCloud 同步。只有当你主动选择餐食照片进行 AI 估算时，该照片才会发送。AI 结果可能不准确，不构成医疗诊断、治疗或急救建议。</p>
-              <h3>撤回与服务提供商</h3>
-              <p>关闭 AI 数据共享后，新的 AI 数据将不再发送，但不会自动删除设备上已有的对话或报告。外部服务可能按其政策保留此前处理的数据。</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Cloudflare 隐私政策</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Xiaomi 隐私政策</a></li>
+                <li>食物识别和热量数值是估算，可能不准确。</li>
+                <li>AI 健康问答和 AI 身体复盘基于有限信息生成，可能不完整或错误。</li>
+                <li>体重、体脂、热量和趋势计算仅供参考，不能完整反映你的健康状况。</li>
+                <li>在做出医疗、用药、治疗、孕期、进食障碍、重大饮食或运动决定前，请咨询合格医疗专业人士。</li>
+                <li>如遇紧急情况或急症，请立即联系当地急救服务。</li>
               </ul>`
           },
           {
-            id: "apple", title: "4. Apple 服务",
-            html: `<h3>Apple 健康</h3>
-              <p>在你授权后，LightYet 可以读取体重和体脂记录；在你主动更新资料时读取身高；开启写入后将新的体重或体脂记录写入 Apple 健康。在活动与睡眠功能中，可能读取每日步数、睡眠时长汇总、活动能量总量和训练摘要。这四类活动数据是可选的，只有在你授予相应 iOS 健康权限后才会读取，也不会写回 Apple 健康。HealthKit 数据不会用于广告或追踪。活动数据默认仅在本设备读取和使用，不保存为 LightYet 应用记录，也不进入 iCloud 同步；只有在你同意 AI 数据共享并主动请求 AI 身体复盘时，相关数据才可能离开设备。每台设备都需要单独授权 Apple 健康。</p>
-              <h3>iCloud 和其他 Apple 服务</h3>
-              <p>开启 iCloud 同步后，支持的记录、进度照片展示图或缩略图可能通过你的私人 Apple 账户同步。资料偏好可能使用 NSUbiquitousKeyValueStore。提醒计划和 AI 同意状态只保存在本机。</p>
-              <p>麦克风、语音、相机、照片和通知权限只在使用相应功能时请求。购买由 StoreKit 处理。请参阅 <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Apple 隐私政策</a>。</p>`
+            id: "accounts", title: "4. 你的数据、设备与责任",
+            html: `<p>你需要对自己输入或上传的信息、设定的目标以及如何理解结果负责。请妥善保护你的设备、Apple ID 和 iCloud 账户。</p>
+              <p>部分记录保存在你的设备本地。可选的 iCloud、Apple 健康、照片、麦克风、语音识别、相机和通知功能需要你通过 iOS 授予相应权限。</p>
+              <p>我们的隐私政策说明了数据处理方式，包括 AI 数据共享和外部处理。<a href="${sharedLinks.privacy}" target="_blank" rel="noopener noreferrer">查看 LightYet 隐私政策</a>。</p>`
           },
           {
-            id: "storage", title: "5. 存储、保留与安全",
-            html: `<p>记录通过 SwiftData、UserDefaults、Application Support 文件和 App Group 容器保存在本机。进度照片原图和餐食照片保存在 Application Support 中，应用也可能创建压缩图、缩略图或抠图。活动和睡眠页面使用的 Apple 健康步数、睡眠、活动能量和训练摘要只会为展示临时保留，不会保存为 LightYet 应用记录。</p>
-              <p>本地记录会保留到你删除、清空数据或卸载应用为止。iCloud 副本会保留到你通过 LightYet 或 Apple 控制项删除为止。服务提供商可能按其政策保留有限的请求或运行数据。</p>
-              <p>LightYet 依赖 iOS 沙盒、Apple 数据保护、HTTPS、CloudKit 安全机制和服务商访问控制。任何存储或传输方式都无法保证绝对安全。如果你开启 iCloud，生成的 AI 报告可能包含在现有的 AI 快照同步中；用于生成报告的原始 Apple 健康活动数据不会同步。</p>`
-          },
-          {
-            id: "sharing", title: "6. 共享、出售、分析与广告",
-            html: `<p>LightYet 不出售或出租个人信息，当前版本也不包含第三方广告或行为分析 SDK。</p>
-              <p>信息仅在以下情况共享：与你开启的 Apple 服务共享；在你同意并请求 AI 功能后与 Cloudflare 和 Xiaomi MiMo 共享；与你导出时主动选择的接收方共享；或为履行有效法律义务而共享。</p>`
-          },
-          {
-            id: "choices", title: "7. 你的选择和控制",
-            html: `<ul>
-                <li>不同意 AI 数据共享也可以使用核心记录功能。</li>
-                <li>在设置中开启或关闭 AI 数据共享。</li>
-                <li>在 iOS 中管理相机、照片、麦克风、语音、通知、健康和 iCloud 权限。Apple 健康权限需要在每台设备上单独授予。</li>
-                <li>编辑或删除体重、饮食、照片和 AI 对话记录。</li>
-                <li>导出支持的数据、清空应用数据，并通过 Apple 控制项管理 iCloud 副本。</li>
+            id: "purchases", title: "5. 购买、订阅与会员",
+            html: `<p>高级版功能可能以订阅、终身购买或其他应用内购买形式提供。价格、试用、续订条款和产品名称会在你确认付款前由 Apple 购买弹窗展示。</p>
+              <ul>
+                <li>付款、续订、取消和退款由 Apple 处理。</li>
+                <li>你可以通过 Apple ID 设置管理或取消订阅。</li>
+                <li>高级版权益可能需要成功验证 App Store 交易。</li>
+                <li>除非法律或 Apple 政策另有要求，退款由 Apple 处理。</li>
               </ul>
-              <p>根据你所在地区的法律，你可能享有访问、更正、删除或限制处理个人数据的权利。对外部 AI 处理有疑问时，请联系开发者。</p>`
+              <p>更多购买和订阅规则请参阅 Apple 媒体服务条款：<a href="${sharedLinks.appleSubscriptions}" target="_blank" rel="noopener noreferrer">Apple Media Services Terms and Conditions</a>。</p>`
           },
           {
-            id: "children", title: "8. 儿童隐私",
-            html: `<p>LightYet 不面向 13 岁以下儿童或用户所在地区规定的最低年龄以下人群。我们不会明知地收集低于适用最低年龄儿童的信息。</p>`
+            id: "fair-use", title: "6. 公平使用与防滥用限制",
+            html: `<p>当 LightYet 将某些会员 AI 功能描述为不限量时，含义是面向正常个人使用的不限量。为了保护服务、防止 token 被盗刷、自动化抓取、共享凭证或异常流量，LightYet 可以设置较高的每日公平使用限制、请求大小限制、基于设备或 IP 的限流，以及其他防滥用措施。</p>
+              <p>你不得逆向在线网关、提取 API Key、绕过限流、自动化批量请求、转售访问权限、将服务用于第三方工作负载，或干扰服务运行。</p>`
           },
           {
-            id: "changes", title: "9. 政策变更",
-            html: `<p>本政策可能随着 LightYet 的变化而更新。政策变更时会更新生效日期。AI 处理、服务商或用户选择发生重大变化时，也应同步更新应用内说明。</p>`
+            id: "content", title: "7. 用户内容与禁止行为",
+            html: `<p>你需要对自己提供的照片、文本、问题和其他内容负责。不得上传或提交违法、有害、辱骂、侵犯他人隐私、侵权，或与个人使用本 App 无关的内容。</p>
+              <p>不要将 AI 输出用于高风险决策。在采取行动前，你需要自行审查和判断输出内容。</p>`
           },
           {
-            id: "contact", title: "10. 联系方式",
-            html: `<p>如有隐私问题、请求或疑虑，请联系独立开发者：<a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>。</p>`
+            id: "availability", title: "8. 可用性、变更与终止",
+            html: `<p>LightYet 可能为了提升安全性、满足平台要求、更换 AI 服务商、调整限制或修改功能而更新。在线功能可能因维护、故障、服务商限制、防滥用或网络问题而不可用。</p>
+              <p>如果我们有合理理由认为服务被滥用、攻击或违反本条款使用，我们可以暂停或限制在线功能访问。</p>`
+          },
+          {
+            id: "liability", title: "9. 免责声明与责任限制",
+            html: `<p>在法律允许的最大范围内，LightYet 按现状和可用状态提供。我们不保证记录、AI 结果、热量估算、趋势分析、同步、通知或在线功能一定准确、连续或无错误。</p>
+              <p>在法律允许的最大范围内，开发者不对间接、偶然、特殊、后果性或惩罚性损害负责，也不对你基于 App 内容或 AI 输出做出的决定负责。</p>`
+          },
+          {
+            id: "changes", title: "10. 条款变更",
+            html: `<p>本条款可能随着 LightYet 的变化而更新。发生重大变更时会更新生效日期。变更后继续使用 LightYet，即表示你接受更新后的条款。</p>`
+          },
+          {
+            id: "contact", title: "11. 联系方式",
+            html: `<p>如对本条款有任何问题，请联系独立开发者：<a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>。</p>`
           }
         ],
-        footer: "© 2026 LightYet。本政策适用于当前版本的 LightYet iOS 应用。"
-      },
-
-      ko: {
-        title: "개인정보 처리방침",
-        subtitle: "LightYet이 체중 관리 데이터, 사진, Apple 건강 데이터, 선택적 iCloud 동기화 및 AI 기능에 제출되는 정보를 처리하는 방법을 설명합니다.",
-        meta: ["시행일: 2026년 8월 25일", "로컬 우선", "AI 공유는 동의 필요"],
-        nav: ["개요", "정보", "AI 처리", "Apple 서비스", "저장", "사용자 선택", "문의"],
-        summaryTitle: "개인정보 보호 요약",
-        summary: "LightYet은 로컬 우선 체중 관리 앱입니다. 핵심 기록은 기기에 저장됩니다. 선택 기능은 Apple iCloud, Apple 건강, 로컬 알림, 음성 인식, 카메라, 사진 보관함, StoreKit 및 외부 AI 처리를 사용할 수 있습니다.",
-        cards: [
-          ["광고 및 행동 추적 없음", "현재 앱에는 제3자 광고 또는 행동 분석 SDK가 없습니다."],
-          ["AI는 선택 사항", "AI 데이터 공유에 동의하기 전에는 AI 요청이 전송되지 않습니다."],
-          ["건강 접근은 권한 필요", "관련 iOS 권한을 부여한 후에만 Apple 건강 데이터를 읽거나 씁니다. 걸음 수, 수면, 활동 에너지 및 운동 요약은 기본적으로 이 기기에만 보관됩니다."],
-          ["iCloud 동기화는 선택 사항", "활성화한 경우에만 지원되는 기록이 Apple iCloud 계정을 통해 동기화되며, 기본값은 꺼져 있습니다."]
-        ],
-        sections: [
-          {
-            id: "information", title: "1. LightYet이 처리하는 정보",
-            html: `<p>처리되는 정보는 사용자가 선택한 기능에 따라 달라지며 다음을 포함할 수 있습니다.</p>
-              <ul>
-                <li>체중, 체지방률, 시간, 메모, 목표 및 추세 요약.</li>
-                <li>닉네임, 나이, 성별 선택, 키, 목표 체중, 아바타, 단위 및 테마.</li>
-                <li>진행 사진, 썸네일, 자세 라벨, 식사 기록, 음식 사진 및 칼로리 추정.</li>
-                <li>AI 질문과 답변, 대화 기록, 중요 표시 및 AI 보고서.</li>
-                <li>알림 설정, 구매 권한 상태, 허용한 Apple 건강 체중·체지방·키·걸음 수·수면·활동 에너지·운동 요약 데이터.</li>
-              </ul>
-              <h3>기기 및 네트워크 정보</h3>
-              <p>Apple 및 AI 서비스는 통신 과정에서 IP 주소, 요청 시간, 기술 헤더와 같은 일반 네트워크 정보를 수신할 수 있습니다. LightYet은 이를 광고 프로필이나 앱 간 추적에 사용하지 않습니다.</p>
-              <p>현재 앱은 연락처, 정확한 위치, 결제 카드 정보 또는 광고 식별자를 요청하지 않습니다. 결제 정보는 Apple이 처리합니다.</p>`
-          },
-          {
-            id: "use", title: "2. 정보 이용 방법",
-            html: `<ul>
-                <li>기록 생성, 표시, 검색, 가져오기, 내보내기 및 삭제.</li>
-                <li>추세, 성과, 칼로리 합계, 요약 및 위젯 계산.</li>
-                <li>선택한 사진 저장 및 활성화한 알림, Apple 건강, iCloud 기능 제공.</li>
-                <li>StoreKit을 통한 Premium 권한 확인.</li>
-                <li>동의 후 사용자가 요청한 AI 결과 제공.</li>
-              </ul>
-              <p>LightYet은 행동 광고, 데이터 중개 또는 앱 간 추적에 정보를 사용하지 않습니다.</p>`
-          },
-          {
-            id: "ai", title: "3. AI 데이터 공유 및 외부 처리",
-            html: `<div class="notice"><strong>AI 기능은 선택 동의 방식입니다.</strong><p>AI 요청을 보내기 전에 LightYet은 AI 데이터 공유 안내를 표시합니다. 거부하고 비AI 기능을 계속 사용하거나 설정에서 동의를 철회할 수 있습니다.</p></div>
-              <p>AI 요청은 <strong>Cloudflare Workers</strong>의 LightYet 게이트웨이를 거쳐 <strong>Xiaomi MiMo</strong>로 전달됩니다.</p>
-              <h3>전송될 수 있는 데이터</h3>
-              <ul>
-                <li><strong>식사 사진 추정:</strong> 선택한 압축 식사 이미지, 선택적 힌트, 로케일 및 칼로리 목표.</li>
-                <li><strong>텍스트 또는 음성 식사 추정:</strong> 식사 설명, 로케일 및 칼로리 목표.</li>
-                <li><strong>AI 건강 Q&amp;A:</strong> 질문, 최근 대화 문맥 및 관련 나이, 성별 선택, 키, 체중, 체지방, 추세, 칼로리 정보.</li>
-                <li><strong>AI 신체 리뷰:</strong> 관련 프로필 값, 계획 선호도, 체중·체지방 추세, 칼로리 요약 및 사용자가 보고서를 요청할 때 Apple 건강에서 제공되는 걸음 수·수면 시간 요약·활동 에너지·운동 요약.</li>
-              </ul>
-              <p>신체 리뷰에는 진행 사진이 포함되지 않습니다. 신체 리뷰에 사용되는 Apple 건강 활동 데이터는 해당 보고서를 위해 일시적으로 읽습니다. LightYet은 원시 값을 앱 기록으로 저장하거나 iCloud로 동기화하지 않습니다. 음식 사진은 AI 식사 추정을 위해 직접 선택한 경우에만 전송됩니다. AI 결과는 부정확할 수 있으며 의료 진단, 치료 또는 응급 조언이 아닙니다.</p>
-              <h3>철회 및 제공업체</h3>
-              <p>AI 데이터 공유를 끄면 새로운 AI 전송이 중단되지만 기기에 저장된 대화나 보고서는 자동 삭제되지 않습니다. 외부 서비스는 자체 정책에 따라 이전 처리 데이터를 보관할 수 있습니다.</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Cloudflare 개인정보 처리방침</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Xiaomi 개인정보 처리방침</a></li>
-              </ul>`
-          },
-          {
-            id: "apple", title: "4. Apple 서비스",
-            html: `<h3>Apple 건강</h3>
-              <p>사용자 권한에 따라 LightYet은 체중 및 체지방 기록을 읽고, 프로필 업데이트 요청 시 키를 읽으며, 쓰기를 활성화한 경우 새 체중 또는 체지방 기록을 저장할 수 있습니다. 활동 및 수면 기능에서는 일일 걸음 수, 수면 시간 요약, 활동 에너지 및 운동 요약을 읽을 수 있습니다. 이 네 가지 활동 데이터는 선택 사항이며 관련 iOS 건강 권한을 부여한 후에만 읽고 Apple 건강에 다시 쓰지 않습니다. HealthKit 데이터는 광고나 추적에 사용되지 않습니다. 활동 데이터는 기본적으로 이 기기에서만 사용하고 LightYet 기록으로 저장하거나 iCloud로 동기화하지 않습니다. AI 데이터 공유에 동의하고 AI 신체 리뷰를 직접 요청한 경우에만 기기 밖으로 전송될 수 있습니다. 각 기기에서 Apple 건강 권한을 별도로 부여해야 합니다.</p>
-              <h3>iCloud 및 기타 Apple 서비스</h3>
-              <p>iCloud 동기화를 활성화하면 지원되는 기록과 진행 사진 표시 이미지 또는 썸네일이 개인 Apple 계정을 통해 동기화될 수 있습니다. 프로필 설정은 NSUbiquitousKeyValueStore를 사용할 수 있습니다. 알림 일정과 AI 동의 상태는 기기에만 저장됩니다.</p>
-              <p>마이크, 음성, 카메라, 사진 및 알림 권한은 관련 기능을 사용할 때만 요청됩니다. 구매는 StoreKit이 처리합니다. <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Apple 개인정보 처리방침</a>을 참조하세요.</p>`
-          },
-          {
-            id: "storage", title: "5. 저장, 보관 및 보안",
-            html: `<p>기록은 SwiftData, UserDefaults, Application Support 파일 및 앱 그룹 컨테이너를 사용해 로컬에 저장됩니다. 진행 사진 원본과 음식 사진은 Application Support에 저장되며 압축본, 썸네일 또는 컷아웃도 생성될 수 있습니다. 활동 및 수면 화면에 사용되는 Apple 건강 걸음 수, 수면, 활동 에너지 및 운동 요약은 표시를 위해 일시적으로 보관되며 LightYet 기록으로 저장되지 않습니다.</p>
-              <p>로컬 기록은 삭제, 데이터 초기화 또는 앱 제거 시까지 유지됩니다. iCloud 사본은 LightYet 또는 Apple 제어에서 삭제할 때까지 유지됩니다. 서비스 제공업체는 자체 정책에 따라 제한된 요청 또는 운영 데이터를 보관할 수 있습니다.</p>
-              <p>LightYet은 iOS 샌드박스, Apple 데이터 보호, HTTPS, CloudKit 보안 및 제공업체 접근 제어를 사용합니다. 어떠한 저장 또는 전송 방식도 완전한 보안을 보장할 수 없습니다. iCloud를 활성화하면 생성된 AI 보고서가 기존 AI 스냅샷 동기화에 포함될 수 있지만, 보고서 생성에 사용된 원시 Apple 건강 활동 데이터는 동기화되지 않습니다.</p>`
-          },
-          {
-            id: "sharing", title: "6. 공유, 판매, 분석 및 광고",
-            html: `<p>LightYet은 개인정보를 판매하거나 임대하지 않으며 현재 제3자 광고 또는 행동 분석 SDK를 포함하지 않습니다.</p>
-              <p>정보는 활성화한 Apple 서비스, AI 동의 후 요청 시 Cloudflare와 Xiaomi MiMo, 사용자가 내보낼 때 선택한 수신자 또는 유효한 법적 의무를 위해서만 공유됩니다.</p>`
-          },
-          {
-            id: "choices", title: "7. 사용자 선택 및 제어",
-            html: `<ul>
-                <li>AI 동의 없이 핵심 기록 기능 사용.</li>
-                <li>설정에서 AI 데이터 공유 켜기 또는 끄기.</li>
-                <li>iOS에서 카메라, 사진, 마이크, 음성, 알림, 건강 및 iCloud 권한 관리. Apple 건강 권한은 각 기기에서 별도로 부여해야 합니다.</li>
-                <li>체중, 식사, 사진 및 AI 대화 기록 편집 또는 삭제.</li>
-                <li>지원 데이터 내보내기, 앱 데이터 삭제 및 Apple 제어에서 iCloud 사본 관리.</li>
-              </ul>
-              <p>지역 법률에 따라 개인정보 접근, 수정, 삭제 또는 처리 제한 권리가 있을 수 있습니다. 외부 AI 처리에 관한 질문은 개발자에게 문의하세요.</p>`
-          },
-          {
-            id: "children", title: "8. 아동의 개인정보",
-            html: `<p>LightYet은 13세 미만 또는 사용자 관할 지역의 최소 연령 미만 아동을 대상으로 하지 않습니다. 해당 최소 연령 미만 아동의 정보를 고의로 수집하지 않습니다.</p>`
-          },
-          {
-            id: "changes", title: "9. 정책 변경",
-            html: `<p>LightYet 변경에 따라 본 정책이 업데이트될 수 있습니다. 변경 시 시행일을 수정합니다. AI 처리, 제공업체 또는 사용자 선택에 중대한 변경이 있는 경우 앱 안내에도 반영됩니다.</p>`
-          },
-          {
-            id: "contact", title: "10. 문의",
-            html: `<p>개인정보 관련 질문, 요청 또는 우려 사항은 독립 개발자 <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>으로 문의하세요.</p>`
-          }
-        ],
-        footer: "© 2026 LightYet. 본 정책은 현재 LightYet iOS 앱에 적용됩니다."
-      },
-
-      ja: {
-        title: "プライバシーポリシー",
-        subtitle: "LightYet が体重管理データ、写真、Apple ヘルスデータ、任意の iCloud 同期、および AI 機能に送信する情報をどのように扱うかを説明します。",
-        meta: ["施行日：2026年8月25日", "ローカル優先", "AI 共有には同意が必要"],
-        nav: ["概要", "情報", "AI 処理", "Apple サービス", "保存", "選択肢", "連絡先"],
-        summaryTitle: "プライバシー概要",
-        summary: "LightYet はローカル優先の体重管理アプリです。主要な記録は端末に保存されます。任意機能では Apple iCloud、Apple ヘルス、ローカル通知、音声認識、カメラ、写真ライブラリ、StoreKit、外部 AI 処理を利用する場合があります。",
-        cards: [
-          ["広告・行動追跡なし", "現在のアプリには第三者広告 SDK や行動分析 SDK は含まれていません。"],
-          ["AI は任意", "AI データ共有に同意するまで AI リクエストは送信されません。"],
-          ["ヘルスデータには許可が必要", "該当する iOS 権限を許可した場合のみ Apple ヘルスデータを読み書きします。歩数、睡眠、アクティブエネルギー、ワークアウト概要は初期状態ではこの端末内だけで扱われます。"],
-          ["iCloud 同期は任意", "有効にした場合のみ、対応する記録が Apple iCloud アカウントを通じて同期され、初期状態ではオフです。"]
-        ],
-        sections: [
-          {
-            id: "information", title: "1. LightYet が扱う情報",
-            html: `<p>扱う情報は選択した機能により異なり、次の内容を含む場合があります。</p>
-              <ul>
-                <li>体重、体脂肪率、日時、メモ、目標、傾向の要約。</li>
-                <li>ニックネーム、年齢、性別選択、身長、目標体重、アバター、単位、テーマ。</li>
-                <li>経過写真、サムネイル、姿勢ラベル、食事記録、食事写真、カロリー推定。</li>
-                <li>AI の質問・回答、会話履歴、重要マーク、AI レポート。</li>
-                <li>リマインダー設定、購入権利状態、許可された Apple ヘルスの体重・体脂肪・身長・歩数・睡眠・アクティブエネルギー・ワークアウト概要データ。</li>
-              </ul>
-              <h3>端末・ネットワーク情報</h3>
-              <p>Apple や AI サービスは通信時に IP アドレス、リクエスト時刻、技術ヘッダーなどの通常のネットワーク情報を受信します。LightYet は広告プロファイルやアプリ横断追跡に使用しません。</p>
-              <p>現在のアプリは連絡先、正確な位置情報、カード情報、広告識別子を要求しません。支払い情報は Apple が処理します。</p>`
-          },
-          {
-            id: "use", title: "2. 情報の利用目的",
-            html: `<ul>
-                <li>記録の作成、表示、検索、インポート、エクスポート、削除。</li>
-                <li>傾向、実績、カロリー合計、要約、ウィジェットの計算。</li>
-                <li>選択した写真の保存、および有効にした通知、Apple ヘルス、iCloud 機能の提供。</li>
-                <li>StoreKit による Premium 権利の確認。</li>
-                <li>同意後に明示的に要求した AI 結果の提供。</li>
-              </ul>
-              <p>LightYet は行動広告、データ仲介、アプリ横断追跡に情報を使用しません。</p>`
-          },
-          {
-            id: "ai", title: "3. AI データ共有と外部処理",
-            html: `<div class="notice"><strong>AI 機能はオプトインです。</strong><p>AI リクエスト送信前に AI データ共有画面を表示します。拒否して非 AI 機能を使い続けることも、設定から同意を撤回することもできます。</p></div>
-              <p>AI リクエストは <strong>Cloudflare Workers</strong> 上の LightYet ゲートウェイを経由し、<strong>Xiaomi MiMo</strong> に転送されます。</p>
-              <h3>送信される可能性があるデータ</h3>
-              <ul>
-                <li><strong>食事写真推定：</strong>選択した圧縮画像、任意のヒント、ロケール、カロリー目標。</li>
-                <li><strong>文字・音声による食事推定：</strong>食事の説明、ロケール、カロリー目標。</li>
-                <li><strong>AI 健康 Q&amp;A：</strong>質問、最近の会話文脈、関連する年齢、性別選択、身長、体重、体脂肪、傾向、カロリー情報。</li>
-                <li><strong>AI 身体レビュー：</strong>関連プロフィール値、計画設定、体重・体脂肪傾向、カロリー要約、およびレポートを要求した場合の Apple ヘルスの歩数・睡眠時間の要約・アクティブエネルギー・ワークアウト概要。</li>
-              </ul>
-              <p>身体レビューに経過写真は含まれません。身体レビューに使う Apple ヘルスの活動データは、そのレポートのために一時的に読み取られます。LightYet は生の値をアプリの記録として保存したり、iCloud と同期したりしません。食事写真は AI 食事推定のために自ら選択した場合のみ送信されます。AI 結果は不正確な場合があり、医療診断、治療、緊急助言ではありません。</p>
-              <h3>撤回と提供者</h3>
-              <p>AI データ共有をオフにすると新しい AI 送信は停止しますが、端末内の会話やレポートは自動削除されません。外部サービスは各ポリシーに従って以前の処理データを保持する場合があります。</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Cloudflare プライバシーポリシー</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Xiaomi プライバシーポリシー</a></li>
-              </ul>`
-          },
-          {
-            id: "apple", title: "4. Apple サービス",
-            html: `<h3>Apple ヘルス</h3>
-              <p>許可を得た場合、LightYet は体重・体脂肪記録を読み取り、プロフィール更新を選択したときに身長を読み取り、書き込みを有効にした場合は新しい体重・体脂肪記録を書き込みます。活動・睡眠機能では、1日の歩数、睡眠時間の要約、アクティブエネルギー、ワークアウト概要を読み取る場合があります。この4種類の活動データは任意で、該当する iOS ヘルス権限を許可した場合のみ読み取り、Apple ヘルスへ書き戻しません。HealthKit データは広告や追跡に使用しません。活動データは初期状態ではこの端末内だけで扱い、LightYet の記録として保存せず、iCloud と同期しません。AI データ共有に同意し、AI 身体レビューを明示的に要求した場合のみ端末外へ送信される可能性があります。Apple ヘルスの権限は端末ごとに別途必要です。</p>
-              <h3>iCloud とその他の Apple サービス</h3>
-              <p>iCloud 同期を有効にすると、対応する記録や経過写真の表示画像・サムネイルが個人の Apple アカウントを通じて同期される場合があります。プロフィール設定には NSUbiquitousKeyValueStore を使用する場合があります。通知予定と AI 同意状態は端末内に保存されます。</p>
-              <p>マイク、音声、カメラ、写真、通知の権限は関連機能を使う場合のみ要求します。購入は StoreKit が処理します。<a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Apple プライバシーポリシー</a>をご覧ください。</p>`
-          },
-          {
-            id: "storage", title: "5. 保存、保持、セキュリティ",
-            html: `<p>記録は SwiftData、UserDefaults、Application Support ファイル、App Group コンテナを使ってローカル保存されます。経過写真の原本と食事写真は Application Support に保存され、圧縮画像、サムネイル、切り抜きが作成される場合があります。活動・睡眠画面で使う Apple ヘルスの歩数、睡眠、アクティブエネルギー、ワークアウト概要は表示のため一時的に保持され、LightYet の記録として保存されません。</p>
-              <p>ローカル記録は削除、データ消去、アプリ削除まで保持されます。iCloud のコピーは LightYet または Apple の設定で削除するまで残ります。サービス提供者は各ポリシーに基づき限定的なリクエスト・運用データを保持する場合があります。</p>
-              <p>LightYet は iOS サンドボックス、Apple Data Protection、HTTPS、CloudKit セキュリティ、提供者のアクセス制御に依存します。完全な安全性を保証できる保存・送信方法はありません。iCloud を有効にすると、生成した AI レポートが既存の AI スナップショット同期に含まれる場合がありますが、レポート作成に使った生の Apple ヘルス活動データは同期されません。</p>`
-          },
-          {
-            id: "sharing", title: "6. 共有、販売、分析、広告",
-            html: `<p>LightYet は個人情報を販売・貸与せず、現在は第三者広告 SDK や行動分析 SDK を含みません。</p>
-              <p>情報は、有効にした Apple サービス、AI 同意後の Cloudflare と Xiaomi MiMo、エクスポート時に選択した受信者、または有効な法的義務のためにのみ共有されます。</p>`
-          },
-          {
-            id: "choices", title: "7. 選択肢と管理",
-            html: `<ul>
-                <li>AI 同意なしで主要な記録機能を利用。</li>
-                <li>設定で AI データ共有をオン・オフ。</li>
-                <li>iOS でカメラ、写真、マイク、音声、通知、ヘルス、iCloud 権限を管理。Apple ヘルスの権限は端末ごとに別途許可する必要があります。</li>
-                <li>体重、食事、写真、AI 会話記録を編集または削除。</li>
-                <li>対応データのエクスポート、アプリデータ消去、Apple 設定で iCloud コピーを管理。</li>
-              </ul>
-              <p>地域の法律により、個人データへのアクセス、訂正、削除、処理制限の権利がある場合があります。外部 AI 処理については開発者へお問い合わせください。</p>`
-          },
-          {
-            id: "children", title: "8. 子どものプライバシー",
-            html: `<p>LightYet は 13 歳未満、またはユーザーの法域で定める最低年齢未満の子どもを対象としていません。該当年齢未満の子どもの情報を故意に収集しません。</p>`
-          },
-          {
-            id: "changes", title: "9. ポリシーの変更",
-            html: `<p>LightYet の変更に伴い本ポリシーを更新する場合があります。変更時には施行日を更新します。AI 処理、提供者、ユーザーの選択肢に重大な変更がある場合はアプリ内表示にも反映します。</p>`
-          },
-          {
-            id: "contact", title: "10. お問い合わせ",
-            html: `<p>プライバシーに関する質問、請求、懸念は独立開発者 <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a> までご連絡ください。</p>`
-          }
-        ],
-        footer: "© 2026 LightYet。本ポリシーは現在の LightYet iOS アプリに適用されます。"
-      },
-
-      de: {
-        title: "Datenschutzerklärung",
-        subtitle: "Diese Richtlinie erklärt, wie LightYet Gewichtsmanagementdaten, Fotos, Apple-Health-Daten, optionale iCloud-Synchronisierung und an KI-Funktionen übermittelte Informationen verarbeitet.",
-        meta: ["Gültig ab: 25. August 2026", "Lokal zuerst", "KI-Freigabe erfordert Zustimmung"],
-        nav: ["Überblick", "Informationen", "KI-Verarbeitung", "Apple-Dienste", "Speicherung", "Ihre Wahl", "Kontakt"],
-        summaryTitle: "Datenschutz auf einen Blick",
-        summary: "LightYet ist eine lokal ausgerichtete App für Gewichtsmanagement. Kerndaten werden auf Ihrem Gerät gespeichert. Optionale Funktionen können Apple iCloud, Apple Health, lokale Mitteilungen, Spracherkennung, Kamera, Fotomediathek, StoreKit und externe KI-Verarbeitung verwenden.",
-        cards: [
-          ["Keine Werbung oder Verhaltensverfolgung", "Die aktuelle App enthält keine Drittanbieter-SDKs für Werbung oder Verhaltensanalyse."],
-          ["KI ist optional", "Vor Ihrer Zustimmung zur KI-Datenfreigabe wird keine KI-Anfrage gesendet."],
-          ["Gesundheitszugriff braucht Erlaubnis", "Apple-Health-Daten werden nur nach Erteilung der entsprechenden iOS-Berechtigung gelesen oder geschrieben. Schritte, Schlaf, aktive Energie und Trainingszusammenfassungen bleiben standardmäßig auf diesem Gerät."],
-          ["iCloud-Sync ist optional", "Unterstützte Datensätze werden nur bei Aktivierung über Ihr Apple-iCloud-Konto synchronisiert; standardmäßig ist der Sync deaktiviert."]
-        ],
-        sections: [
-          {
-            id: "information", title: "1. Von LightYet verarbeitete Informationen",
-            html: `<p>Die verarbeiteten Informationen hängen von den gewählten Funktionen ab und können Folgendes umfassen:</p>
-              <ul>
-                <li>Gewicht, Körperfettanteil, Zeitangaben, Notizen, Ziele und Trendzusammenfassungen.</li>
-                <li>Spitzname, Alter, Geschlechtsauswahl, Größe, Zielgewicht, Avatar, Einheit und Design.</li>
-                <li>Fortschrittsfotos, Vorschaubilder, Positionsangaben, Essensaufzeichnungen, Mahlzeitenfotos und Kalorienschätzungen.</li>
-                <li>KI-Fragen, Antworten, Gesprächsverlauf, Wichtig-Markierungen und KI-Berichte.</li>
-                <li>Erinnerungseinstellungen, Kaufberechtigungsstatus und autorisierte Apple-Health-Daten zu Gewicht, Körperfett, Größe, Schritten, Schlaf, aktiver Energie und Trainingszusammenfassungen.</li>
-              </ul>
-              <h3>Geräte- und Netzwerkinformationen</h3>
-              <p>Apple- und KI-Dienste erhalten bei der Kommunikation übliche Netzwerkdaten wie IP-Adresse, Anfragezeit und technische Header. LightYet verwendet diese nicht für Werbeprofile oder App-übergreifendes Tracking.</p>
-              <p>Die aktuelle App fordert keine Kontakte, präzisen Standortdaten, Zahlungskartendaten oder Werbe-ID an. Zahlungsdaten werden von Apple verarbeitet.</p>`
-          },
-          {
-            id: "use", title: "2. Verwendung der Informationen",
-            html: `<ul>
-                <li>Erstellen, Anzeigen, Suchen, Importieren, Exportieren und Löschen von Datensätzen.</li>
-                <li>Berechnung von Trends, Erfolgen, Kaloriensummen, Zusammenfassungen und Widgets.</li>
-                <li>Speicherung ausgewählter Fotos und Bereitstellung aktivierter Erinnerungs-, Apple-Health- und iCloud-Funktionen.</li>
-                <li>Prüfung des Premium-Zugangs über StoreKit.</li>
-                <li>Bereitstellung ausdrücklich angeforderter KI-Ergebnisse nach Zustimmung.</li>
-              </ul>
-              <p>LightYet verwendet Informationen nicht für verhaltensbasierte Werbung, Datenhandel oder App-übergreifendes Tracking.</p>`
-          },
-          {
-            id: "ai", title: "3. KI-Datenfreigabe und externe Verarbeitung",
-            html: `<div class="notice"><strong>KI-Funktionen sind freiwillig.</strong><p>Vor dem Senden einer KI-Anfrage zeigt LightYet einen Hinweis zur KI-Datenfreigabe. Sie können ablehnen und Nicht-KI-Funktionen weiter nutzen oder die Zustimmung später in den Einstellungen widerrufen.</p></div>
-              <p>KI-Anfragen laufen über das LightYet-Gateway auf <strong>Cloudflare Workers</strong> und werden an <strong>Xiaomi MiMo</strong> weitergeleitet.</p>
-              <h3>Möglicherweise übermittelte Daten</h3>
-              <ul>
-                <li><strong>Foto-Schätzung einer Mahlzeit:</strong> ausgewähltes komprimiertes Bild, optionaler Hinweis, Sprache/Region und Kalorienziel.</li>
-                <li><strong>Text- oder Sprachschätzung:</strong> Mahlzeitenbeschreibung, Sprache/Region und Kalorienziel.</li>
-                <li><strong>KI-Gesundheitsfragen:</strong> Frage, letzter Gesprächskontext und relevante Angaben zu Alter, Geschlechtsauswahl, Größe, Gewicht, Körperfett, Trends und Kalorien.</li>
-                <li><strong>KI-Körperanalyse:</strong> relevante Profilwerte, Planpräferenzen, Gewichts- und Körperfetttrends, Kalorienübersichten sowie Apple-Health-Schritte, Schlafzeit-Zusammenfassungen, aktive Energie und Trainingszusammenfassungen, wenn Sie diesen Bericht anfordern.</li>
-              </ul>
-              <p>Fortschrittsfotos werden nicht in Körperanalyse-Anfragen aufgenommen. Die für die Körperanalyse verwendeten Apple-Health-Aktivitätsdaten werden nur für diesen Bericht vorübergehend gelesen; LightYet speichert die Rohwerte nicht als App-Datensätze und synchronisiert sie nicht über iCloud. Ein Mahlzeitenfoto wird nur gesendet, wenn Sie es aktiv für eine KI-Schätzung auswählen. KI-Ergebnisse können ungenau sein und sind keine medizinische Diagnose, Behandlung oder Notfallberatung.</p>
-              <h3>Widerruf und Anbieter</h3>
-              <p>Das Deaktivieren der KI-Datenfreigabe stoppt neue Übermittlungen, löscht aber lokale Gespräche oder Berichte nicht automatisch. Anbieter können zuvor verarbeitete Daten nach ihren Richtlinien aufbewahren.</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Cloudflare-Datenschutzrichtlinie</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Xiaomi-Datenschutzrichtlinie</a></li>
-              </ul>`
-          },
-          {
-            id: "apple", title: "4. Apple-Dienste",
-            html: `<h3>Apple Health</h3>
-              <p>Mit Ihrer Erlaubnis kann LightYet Gewichts- und Körperfettdaten lesen, bei gewünschter Profilaktualisierung die Größe lesen und bei aktivierter Schreibfunktion neue Gewichts- oder Körperfettdaten speichern. Für die Aktivitäts- und Schlaffunktionen können tägliche Schritte, Schlafzeit-Zusammenfassungen, aktive Energie und Trainingszusammenfassungen gelesen werden. Diese vier Aktivitätskategorien sind optional, werden nur nach der entsprechenden iOS-Health-Berechtigung gelesen und nicht in Apple Health zurückgeschrieben. HealthKit-Daten werden nicht für Werbung oder Tracking verwendet. Aktivitätsdaten bleiben standardmäßig auf diesem Gerät, werden nicht als LightYet-Datensatz gespeichert und nicht über iCloud synchronisiert. Sie können das Gerät nur verlassen, wenn Sie der KI-Datenfreigabe zustimmen und aktiv eine KI-Körperanalyse anfordern. Jedes Gerät benötigt eine eigene Apple-Health-Berechtigung.</p>
-              <h3>iCloud und weitere Apple-Dienste</h3>
-              <p>Bei aktiviertem iCloud-Sync können unterstützte Datensätze und Anzeigeversionen oder Vorschaubilder von Fortschrittsfotos über Ihr privates Apple-Konto synchronisiert werden. Profileinstellungen können NSUbiquitousKeyValueStore verwenden. Erinnerungspläne und KI-Zustimmung bleiben lokal.</p>
-              <p>Mikrofon-, Sprach-, Kamera-, Foto- und Mitteilungsberechtigungen werden nur für verwendete Funktionen angefordert. Käufe werden über StoreKit abgewickelt. Siehe <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Apple-Datenschutzrichtlinie</a>.</p>`
-          },
-          {
-            id: "storage", title: "5. Speicherung, Aufbewahrung und Sicherheit",
-            html: `<p>Datensätze werden lokal mit SwiftData, UserDefaults, Application-Support-Dateien und dem App-Group-Container gespeichert. Originale Fortschritts- und Mahlzeitenfotos werden in Application Support gespeichert; komprimierte Bilder, Vorschaubilder oder Freisteller können erstellt werden. Apple-Health-Schritte, Schlaf, aktive Energie und Trainingszusammenfassungen für die Aktivitäts- und Schlafansichten werden nur vorübergehend zur Anzeige gehalten und nicht als LightYet-Datensätze gespeichert.</p>
-              <p>Lokale Daten bleiben bis zur Löschung, Datenbereinigung oder Deinstallation erhalten. iCloud-Kopien bleiben bis zur Entfernung über LightYet oder Apple bestehen. Anbieter können begrenzte Anfrage- oder Betriebsdaten nach eigenen Richtlinien speichern.</p>
-              <p>LightYet nutzt iOS-Sandboxing, Apple Data Protection, HTTPS, CloudKit-Sicherheit und Zugriffskontrollen der Anbieter. Keine Speicher- oder Übertragungsmethode ist vollständig sicher. Wenn Sie iCloud aktivieren, kann ein erstellter KI-Bericht in die bestehende KI-Snapshot-Synchronisierung aufgenommen werden; die dafür verwendeten Rohdaten der Apple-Health-Aktivität werden nicht synchronisiert.</p>`
-          },
-          {
-            id: "sharing", title: "6. Weitergabe, Verkauf, Analyse und Werbung",
-            html: `<p>LightYet verkauft oder vermietet keine personenbezogenen Daten und enthält derzeit keine Drittanbieter-SDKs für Werbung oder Verhaltensanalyse.</p>
-              <p>Informationen werden nur mit aktivierten Apple-Diensten, nach KI-Zustimmung mit Cloudflare und Xiaomi MiMo, mit von Ihnen beim Export gewählten Empfängern oder aufgrund gültiger rechtlicher Pflichten geteilt.</p>`
-          },
-          {
-            id: "choices", title: "7. Ihre Wahl- und Kontrollmöglichkeiten",
-            html: `<ul>
-                <li>Kernfunktionen ohne KI-Zustimmung nutzen.</li>
-                <li>KI-Datenfreigabe in den Einstellungen ein- oder ausschalten.</li>
-                <li>Kamera-, Foto-, Mikrofon-, Sprach-, Mitteilungs-, Health- und iCloud-Berechtigungen in iOS verwalten. Apple-Health-Berechtigungen müssen auf jedem Gerät separat erteilt werden.</li>
-                <li>Gewichts-, Essens-, Foto- und KI-Gesprächsdaten bearbeiten oder löschen.</li>
-                <li>Unterstützte Daten exportieren, App-Daten löschen und iCloud-Kopien über Apple verwalten.</li>
-              </ul>
-              <p>Je nach Standort können Sie Rechte auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung haben. Fragen zur externen KI-Verarbeitung richten Sie bitte an den Entwickler.</p>`
-          },
-          {
-            id: "children", title: "8. Datenschutz von Kindern",
-            html: `<p>LightYet richtet sich nicht an Kinder unter 13 Jahren oder unter dem Mindestalter der jeweiligen Rechtsordnung. Informationen von Kindern unter diesem Alter werden nicht wissentlich erhoben.</p>`
-          },
-          {
-            id: "changes", title: "9. Änderungen dieser Richtlinie",
-            html: `<p>Diese Richtlinie kann bei Änderungen an LightYet aktualisiert werden. Das Gültigkeitsdatum wird angepasst. Wesentliche Änderungen an KI-Verarbeitung, Anbietern oder Nutzerwahlmöglichkeiten werden auch in den App-Hinweisen berücksichtigt.</p>`
-          },
-          {
-            id: "contact", title: "10. Kontakt",
-            html: `<p>Bei Datenschutzfragen, Anfragen oder Bedenken kontaktieren Sie den unabhängigen Entwickler unter <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
-          }
-        ],
-        footer: "© 2026 LightYet. Diese Richtlinie gilt für die aktuelle LightYet-iOS-App."
-      },
-
-      es: {
-        title: "Política de privacidad",
-        subtitle: "Esta política explica cómo LightYet trata los datos de control de peso, fotos, datos de Apple Health, sincronización opcional con iCloud e información enviada a funciones de IA.",
-        meta: ["Vigente desde: 25 de agosto de 2026", "Prioridad local", "Compartir con IA requiere consentimiento"],
-        nav: ["Resumen", "Información", "Procesamiento IA", "Servicios Apple", "Almacenamiento", "Tus opciones", "Contacto"],
-        summaryTitle: "Privacidad de un vistazo",
-        summary: "LightYet es una app de control de peso con prioridad local. Los registros principales se guardan en tu dispositivo. Las funciones opcionales pueden usar Apple iCloud, Apple Health, notificaciones locales, reconocimiento de voz, cámara, fototeca, StoreKit y procesamiento externo de IA.",
-        cards: [
-          ["Sin publicidad ni seguimiento conductual", "La app actual no incluye SDK de publicidad ni analítica conductual de terceros."],
-          ["La IA es opcional", "No se envía ninguna solicitud de IA hasta que aceptas compartir datos con la IA."],
-          ["El acceso a Salud requiere permiso", "Los datos de Apple Health solo se leen o escriben tras conceder el permiso correspondiente de iOS. Los pasos, el sueño, la energía activa y los resúmenes de entrenamientos permanecen por defecto en este dispositivo."],
-          ["La sincronización iCloud es opcional", "Los registros compatibles solo se sincronizan mediante tu cuenta de Apple iCloud cuando la activas; está desactivada por defecto."]
-        ],
-        sections: [
-          {
-            id: "information", title: "1. Información que trata LightYet",
-            html: `<p>La información tratada depende de las funciones que elijas y puede incluir:</p>
-              <ul>
-                <li>Peso, porcentaje de grasa corporal, fechas, notas, objetivos y resúmenes de tendencias.</li>
-                <li>Apodo, edad, selección de sexo, altura, peso objetivo, avatar, unidad y tema.</li>
-                <li>Fotos de progreso, miniaturas, etiquetas de postura, registros de comidas, fotos y estimaciones de calorías.</li>
-                <li>Preguntas y respuestas de IA, historial, marcas importantes e informes de IA.</li>
-                <li>Preferencias de recordatorios, estado de compra y datos autorizados de Apple Health sobre peso, grasa corporal, altura, pasos, sueño, energía activa y resúmenes de entrenamientos.</li>
-              </ul>
-              <h3>Información del dispositivo y la red</h3>
-              <p>Apple y los servicios de IA reciben información normal de red, como dirección IP, hora y cabeceras técnicas. LightYet no la usa para perfiles publicitarios ni seguimiento entre apps.</p>
-              <p>La app actual no solicita contactos, ubicación precisa, datos de tarjetas ni identificador publicitario. Apple procesa los datos de pago.</p>`
-          },
-          {
-            id: "use", title: "2. Cómo se usa la información",
-            html: `<ul>
-                <li>Crear, mostrar, buscar, importar, exportar y eliminar registros.</li>
-                <li>Calcular tendencias, logros, calorías, resúmenes y widgets.</li>
-                <li>Guardar fotos elegidas y ofrecer recordatorios, Apple Health e iCloud cuando los activas.</li>
-                <li>Verificar el acceso Premium mediante StoreKit.</li>
-                <li>Proporcionar el resultado de IA que solicites tras dar tu consentimiento.</li>
-              </ul>
-              <p>LightYet no usa tu información para publicidad conductual, intermediación de datos ni seguimiento entre apps.</p>`
-          },
-          {
-            id: "ai", title: "3. Intercambio de datos y procesamiento externo de IA",
-            html: `<div class="notice"><strong>Las funciones de IA son opcionales.</strong><p>Antes de enviar una solicitud de IA, LightYet muestra una pantalla de consentimiento. Puedes rechazarla y seguir usando funciones sin IA, o retirarla más tarde en Ajustes.</p></div>
-              <p>Las solicitudes pasan por la puerta de enlace de LightYet en <strong>Cloudflare Workers</strong> y se reenvían a <strong>Xiaomi MiMo</strong>.</p>
-              <h3>Datos que pueden enviarse</h3>
-              <ul>
-                <li><strong>Estimación por foto:</strong> imagen comprimida elegida, pista opcional, idioma/región y objetivo calórico.</li>
-                <li><strong>Estimación por texto o voz:</strong> descripción de la comida, idioma/región y objetivo calórico.</li>
-                <li><strong>Preguntas de bienestar con IA:</strong> pregunta, contexto reciente y datos pertinentes de edad, sexo seleccionado, altura, peso, grasa corporal, tendencias y calorías.</li>
-                <li><strong>Revisión corporal con IA:</strong> datos pertinentes del perfil, preferencias, tendencias y resúmenes calóricos, además de pasos, resúmenes de duración del sueño, energía activa y resúmenes de entrenamientos de Apple Health cuando solicitas este informe.</li>
-              </ul>
-              <p>Las fotos de progreso no se incluyen en la revisión corporal. Los datos de actividad de Apple Health usados para la revisión corporal solo se leen temporalmente para ese informe; LightYet no guarda esos valores sin procesar como registros de la app ni los sincroniza mediante iCloud. Una foto de comida solo se envía si la eliges para una estimación de IA. Los resultados pueden ser inexactos y no son diagnóstico, tratamiento ni consejo de emergencia.</p>
-              <h3>Retirada y proveedores</h3>
-              <p>Desactivar el intercambio con IA detiene nuevos envíos, pero no borra automáticamente conversaciones o informes locales. Los proveedores pueden conservar datos ya procesados según sus políticas.</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Política de privacidad de Cloudflare</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Política de privacidad de Xiaomi</a></li>
-              </ul>`
-          },
-          {
-            id: "apple", title: "4. Servicios de Apple",
-            html: `<h3>Apple Health</h3>
-              <p>Con tu permiso, LightYet puede leer peso y grasa corporal, leer la altura cuando pides actualizar el perfil y escribir nuevos registros cuando activas la escritura. En las funciones de actividad y sueño puede leer pasos diarios, resúmenes de duración del sueño, energía activa y resúmenes de entrenamientos. Estas cuatro categorías son opcionales, solo se leen después de conceder el permiso de Salud correspondiente de iOS y no se escriben de nuevo en Apple Health. Los datos de HealthKit no se usan para publicidad ni seguimiento. Los datos de actividad permanecen por defecto en este dispositivo, no se guardan como registros de LightYet y no se sincronizan mediante iCloud. Solo pueden salir del dispositivo si aceptas compartir datos con IA y solicitas activamente una revisión corporal con IA. Cada dispositivo requiere su propia autorización de Apple Health.</p>
-              <h3>iCloud y otros servicios de Apple</h3>
-              <p>Al activar iCloud, los registros compatibles y las imágenes o miniaturas de fotos de progreso pueden sincronizarse mediante tu cuenta privada de Apple. Las preferencias pueden usar NSUbiquitousKeyValueStore. Los horarios de recordatorios y el consentimiento de IA permanecen locales.</p>
-              <p>Los permisos de micrófono, voz, cámara, fotos y notificaciones solo se solicitan para funciones usadas. Las compras se procesan mediante StoreKit. Consulta la <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Política de privacidad de Apple</a>.</p>`
-          },
-          {
-            id: "storage", title: "5. Almacenamiento, conservación y seguridad",
-            html: `<p>Los registros se guardan localmente mediante SwiftData, UserDefaults, archivos de Application Support y el contenedor del grupo de apps. Los originales de progreso y comidas se guardan en Application Support; pueden crearse versiones comprimidas, miniaturas o recortes. Los pasos, el sueño, la energía activa y los resúmenes de entrenamientos de Apple Health usados en las pantallas de actividad y sueño se mantienen temporalmente para mostrarlos y no se guardan como registros de LightYet.</p>
-              <p>Los registros locales permanecen hasta que los eliminas, borras los datos o desinstalas la app. Las copias en iCloud permanecen hasta que las quitas mediante LightYet o Apple. Los proveedores pueden conservar datos limitados según sus políticas.</p>
-              <p>LightYet se apoya en el aislamiento de iOS, Apple Data Protection, HTTPS, seguridad de CloudKit y controles de acceso. Ningún método garantiza seguridad absoluta. Si activas iCloud, un informe de IA generado puede incluirse en la sincronización existente de instantáneas de IA; los datos de actividad sin procesar de Apple Health usados para crearlo no se sincronizan.</p>`
-          },
-          {
-            id: "sharing", title: "6. Intercambio, venta, analítica y publicidad",
-            html: `<p>LightYet no vende ni alquila información personal y actualmente no incluye SDK de publicidad ni analítica conductual de terceros.</p>
-              <p>La información solo se comparte con servicios de Apple activados, con Cloudflare y Xiaomi MiMo tras el consentimiento, con destinatarios que elijas al exportar o por obligaciones legales válidas.</p>`
-          },
-          {
-            id: "choices", title: "7. Tus opciones y controles",
-            html: `<ul>
-                <li>Usar las funciones principales sin consentimiento de IA.</li>
-                <li>Activar o desactivar el intercambio con IA en Ajustes.</li>
-                <li>Gestionar permisos de cámara, fotos, micrófono, voz, notificaciones, Salud e iCloud en iOS. Los permisos de Apple Health deben concederse por separado en cada dispositivo.</li>
-                <li>Editar o eliminar registros de peso, comida, fotos y conversaciones de IA.</li>
-                <li>Exportar datos compatibles, borrar datos de la app y gestionar copias de iCloud con Apple.</li>
-              </ul>
-              <p>Según tu ubicación, puedes tener derechos de acceso, corrección, eliminación o limitación. Contacta al desarrollador para preguntas sobre procesamiento externo de IA.</p>`
-          },
-          {
-            id: "children", title: "8. Privacidad infantil",
-            html: `<p>LightYet no se dirige a menores de 13 años ni a menores de la edad mínima aplicable. No recopilamos conscientemente información de menores por debajo de esa edad.</p>`
-          },
-          {
-            id: "changes", title: "9. Cambios en esta política",
-            html: `<p>Esta política puede actualizarse cuando cambie LightYet. Se revisará la fecha de vigencia. Los cambios importantes en IA, proveedores u opciones también se reflejarán en los avisos de la app.</p>`
-          },
-          {
-            id: "contact", title: "10. Contacto",
-            html: `<p>Para preguntas, solicitudes o inquietudes sobre privacidad, contacta con el desarrollador independiente en <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
-          }
-        ],
-        footer: "© 2026 LightYet. Esta política se aplica a la app LightYet para iOS actual."
-      },
-
-      fr: {
-        title: "Politique de confidentialité",
-        subtitle: "Cette politique explique comment LightYet traite les données de gestion du poids, les photos, les données Apple Santé, la synchronisation iCloud facultative et les informations soumises aux fonctions d'IA.",
-        meta: ["Date d'effet : 25 août 2026", "Priorité au stockage local", "Le partage IA nécessite un consentement"],
-        nav: ["Aperçu", "Informations", "Traitement IA", "Services Apple", "Stockage", "Vos choix", "Contact"],
-        summaryTitle: "La confidentialité en bref",
-        summary: "LightYet est une application de gestion du poids privilégiant le stockage local. Les données principales sont conservées sur votre appareil. Les fonctions facultatives peuvent utiliser Apple iCloud, Apple Santé, les notifications locales, la reconnaissance vocale, l'appareil photo, la photothèque, StoreKit et un traitement externe par IA.",
-        cards: [
-          ["Aucune publicité ni suivi comportemental", "L'application actuelle n'inclut aucun SDK tiers de publicité ou d'analyse comportementale."],
-          ["L'IA est facultative", "Aucune requête IA n'est envoyée avant votre consentement au partage des données IA."],
-          ["L'accès Santé nécessite une autorisation", "Les données Apple Santé ne sont lues ou écrites qu'après l'autorisation iOS correspondante. Les pas, le sommeil, l'énergie active et les résumés d'entraînement restent par défaut sur cet appareil."],
-          ["La synchronisation iCloud est facultative", "Les données compatibles ne sont synchronisées via votre compte Apple iCloud que si vous l'activez ; elle est désactivée par défaut."]
-        ],
-        sections: [
-          {
-            id: "information", title: "1. Informations traitées par LightYet",
-            html: `<p>Les informations traitées dépendent des fonctions choisies et peuvent inclure :</p>
-              <ul>
-                <li>Poids, pourcentage de masse grasse, dates, notes, objectifs et résumés de tendances.</li>
-                <li>Pseudonyme, âge, sélection du sexe, taille, poids cible, avatar, unité et thème.</li>
-                <li>Photos de progression, miniatures, positions, repas, photos de repas et estimations caloriques.</li>
-                <li>Questions et réponses IA, historique, marquages importants et rapports IA.</li>
-                <li>Préférences de rappel, état des achats et données Apple Santé autorisées concernant le poids, la masse grasse, la taille, les pas, le sommeil, l'énergie active et les résumés d'entraînement.</li>
-              </ul>
-              <h3>Informations sur l'appareil et le réseau</h3>
-              <p>Apple et les services d'IA reçoivent les informations réseau ordinaires telles que l'adresse IP, l'heure et les en-têtes techniques. LightYet ne les utilise pas pour des profils publicitaires ni un suivi entre applications.</p>
-              <p>L'application actuelle ne demande pas vos contacts, votre position précise, vos données de carte ou votre identifiant publicitaire. Apple traite les paiements.</p>`
-          },
-          {
-            id: "use", title: "2. Utilisation des informations",
-            html: `<ul>
-                <li>Créer, afficher, rechercher, importer, exporter et supprimer les données.</li>
-                <li>Calculer tendances, réussites, calories, résumés et widgets.</li>
-                <li>Conserver les photos choisies et fournir les rappels, Apple Santé et iCloud activés.</li>
-                <li>Vérifier l'accès Premium via StoreKit.</li>
-                <li>Fournir le résultat IA demandé après consentement.</li>
-              </ul>
-              <p>LightYet n'utilise pas vos informations pour la publicité comportementale, le courtage de données ou le suivi entre applications.</p>`
-          },
-          {
-            id: "ai", title: "3. Partage des données IA et traitement externe",
-            html: `<div class="notice"><strong>Les fonctions d'IA sont facultatives.</strong><p>Avant toute requête IA, LightYet affiche un écran de consentement. Vous pouvez refuser et continuer sans IA, ou retirer votre consentement dans Réglages.</p></div>
-              <p>Les requêtes passent par la passerelle LightYet sur <strong>Cloudflare Workers</strong> puis sont transmises à <strong>Xiaomi MiMo</strong>.</p>
-              <h3>Données pouvant être envoyées</h3>
-              <ul>
-                <li><strong>Estimation par photo :</strong> image compressée choisie, indication facultative, langue/région et objectif calorique.</li>
-                <li><strong>Estimation par texte ou voix :</strong> description du repas, langue/région et objectif calorique.</li>
-                <li><strong>Questions bien-être IA :</strong> question, contexte récent et données pertinentes d'âge, sexe sélectionné, taille, poids, masse grasse, tendances et calories.</li>
-                <li><strong>Bilan corporel IA :</strong> profil pertinent, préférences, tendances et résumés caloriques, ainsi que les pas, les résumés de durée du sommeil, l'énergie active et les résumés d'entraînement Apple Santé lorsque vous demandez ce rapport.</li>
-              </ul>
-              <p>Les photos de progression ne sont pas incluses dans le bilan corporel. Les données d'activité Apple Santé utilisées pour le bilan corporel sont lues temporairement pour ce rapport ; LightYet n'enregistre pas ces valeurs brutes comme données de l'application et ne les synchronise pas via iCloud. Une photo de repas n'est envoyée que si vous la choisissez pour une estimation IA. Les résultats peuvent être inexacts et ne constituent pas un diagnostic, un traitement ou un conseil d'urgence.</p>
-              <h3>Retrait et prestataires</h3>
-              <p>Désactiver le partage IA arrête les nouveaux envois, sans supprimer automatiquement les conversations ou rapports locaux. Les prestataires peuvent conserver les données déjà traitées selon leurs politiques.</p>
-              <ul>
-                <li><a href="${sharedLinks.cloudflare}" target="_blank" rel="noopener noreferrer">Politique de confidentialité Cloudflare</a></li>
-                <li><a href="${sharedLinks.xiaomi}" target="_blank" rel="noopener noreferrer">Politique de confidentialité Xiaomi</a></li>
-              </ul>`
-          },
-          {
-            id: "apple", title: "4. Services Apple",
-            html: `<h3>Apple Santé</h3>
-              <p>Avec votre autorisation, LightYet peut lire le poids et la masse grasse, lire la taille lors d'une mise à jour du profil et écrire de nouvelles données si l'écriture est activée. Les fonctions d'activité et de sommeil peuvent lire les pas quotidiens, les résumés de durée du sommeil, l'énergie active et les résumés d'entraînement. Ces quatre catégories sont facultatives, lues uniquement après l'autorisation Santé iOS correspondante et ne sont pas réécrites dans Apple Santé. Les données HealthKit ne servent ni à la publicité ni au suivi. Les données d'activité restent par défaut sur cet appareil, ne sont pas enregistrées comme données LightYet et ne sont pas synchronisées via iCloud. Elles ne peuvent quitter l'appareil que si vous acceptez le partage des données IA et demandez activement un bilan corporel IA. Chaque appareil nécessite sa propre autorisation Apple Santé.</p>
-              <h3>iCloud et autres services Apple</h3>
-              <p>Lorsque iCloud est activé, les données compatibles et les images d'affichage ou miniatures de progression peuvent être synchronisées via votre compte Apple privé. Les préférences peuvent utiliser NSUbiquitousKeyValueStore. Les horaires de rappel et le consentement IA restent locaux.</p>
-              <p>Les autorisations microphone, voix, caméra, photos et notifications ne sont demandées que pour les fonctions utilisées. Les achats sont traités par StoreKit. Consultez la <a href="${sharedLinks.apple}" target="_blank" rel="noopener noreferrer">Politique de confidentialité Apple</a>.</p>`
-          },
-          {
-            id: "storage", title: "5. Stockage, conservation et sécurité",
-            html: `<p>Les données sont stockées localement avec SwiftData, UserDefaults, les fichiers Application Support et le conteneur App Group. Les originaux de progression et de repas sont conservés dans Application Support ; des versions compressées, miniatures ou détourées peuvent être créées. Les pas, le sommeil, l'énergie active et les résumés d'entraînement Apple Santé utilisés par les écrans d'activité et de sommeil sont conservés temporairement pour l'affichage et ne sont pas enregistrés comme données LightYet.</p>
-              <p>Les données locales restent jusqu'à leur suppression, l'effacement des données ou la désinstallation. Les copies iCloud restent jusqu'à leur suppression via LightYet ou Apple. Les prestataires peuvent conserver des données limitées selon leurs politiques.</p>
-              <p>LightYet s'appuie sur le bac à sable iOS, Apple Data Protection, HTTPS, la sécurité CloudKit et les contrôles d'accès. Aucune méthode ne garantit une sécurité absolue. Si vous activez iCloud, un rapport IA généré peut être inclus dans la synchronisation existante des instantanés IA ; les données brutes d'activité Apple Santé utilisées pour le créer ne sont pas synchronisées.</p>`
-          },
-          {
-            id: "sharing", title: "6. Partage, vente, analyse et publicité",
-            html: `<p>LightYet ne vend ni ne loue les informations personnelles et n'inclut actuellement aucun SDK tiers de publicité ou d'analyse comportementale.</p>
-              <p>Les informations ne sont partagées qu'avec les services Apple activés, Cloudflare et Xiaomi MiMo après consentement, les destinataires choisis lors d'un export, ou pour respecter une obligation légale valide.</p>`
-          },
-          {
-            id: "choices", title: "7. Vos choix et contrôles",
-            html: `<ul>
-                <li>Utiliser les fonctions principales sans consentement IA.</li>
-                <li>Activer ou désactiver le partage IA dans Réglages.</li>
-                <li>Gérer les autorisations caméra, photos, microphone, voix, notifications, Santé et iCloud dans iOS. Les autorisations Apple Santé doivent être accordées séparément sur chaque appareil.</li>
-                <li>Modifier ou supprimer les données de poids, repas, photos et conversations IA.</li>
-                <li>Exporter les données compatibles, effacer les données de l'app et gérer les copies iCloud via Apple.</li>
-              </ul>
-              <p>Selon votre région, vous pouvez disposer de droits d'accès, de rectification, d'effacement ou de limitation. Contactez le développeur pour toute question sur le traitement externe par IA.</p>`
-          },
-          {
-            id: "children", title: "8. Confidentialité des enfants",
-            html: `<p>LightYet ne s'adresse pas aux enfants de moins de 13 ans ou de l'âge minimum applicable. Nous ne recueillons pas sciemment les informations d'enfants sous cet âge.</p>`
-          },
-          {
-            id: "changes", title: "9. Modifications de cette politique",
-            html: `<p>Cette politique peut évoluer avec LightYet. La date d'effet sera mise à jour. Les changements importants concernant l'IA, les prestataires ou vos choix seront également reflétés dans l'application.</p>`
-          },
-          {
-            id: "contact", title: "10. Contact",
-            html: `<p>Pour toute question, demande ou préoccupation relative à la confidentialité, contactez le développeur indépendant à <a href="mailto:sampson1993@zohomail.cn">sampson1993@zohomail.cn</a>.</p>`
-          }
-        ],
-        footer: "© 2026 LightYet. Cette politique s'applique à l'application LightYet iOS actuelle."
+        footer: "© 2026 LightYet。本条款适用于当前版本的 LightYet iOS 应用及相关在线 AI 网关服务。"
       }
     };
-
-    const sectionNavIndexes = [0, 1, 2, 3, 4, 5, 6];
 
     function render(language) {
       const copy = translations[language] || translations.en;
@@ -1016,7 +449,7 @@
       document.getElementById("meta").innerHTML = copy.meta
         .map(item => `<span class="pill">${item}</span>`).join("");
 
-      const navTargets = ["overview", "information", "ai", "apple", "storage", "choices", "contact"];
+      const navTargets = ["overview", "health", "accounts", "purchases", "fair-use", "content", "contact"];
       document.getElementById("navLinks").innerHTML = copy.nav
         .map((label, index) => `<a href="#${navTargets[index]}">${label}</a>`).join("");
       document.getElementById("navigation").setAttribute("aria-label", copy.title);
@@ -1048,11 +481,11 @@
       document.querySelectorAll("[data-lang]").forEach(button => {
         button.classList.toggle("active", button.dataset.lang === language);
       });
-      localStorage.setItem("lightyet_privacy_language", language);
+      localStorage.setItem("lightyet_terms_language", language);
     }
 
     function initialLanguage() {
-      const saved = localStorage.getItem("lightyet_privacy_language");
+      const saved = localStorage.getItem("lightyet_terms_language");
       if (saved && translations[saved]) return saved;
       const preferred = (navigator.language || "en").toLowerCase();
       return Object.keys(translations).find(language => preferred.startsWith(language)) || "en";
